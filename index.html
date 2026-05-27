@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tengo Hambre — A dónde ir cuando tienes hambre</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <style>
 /* ─── RESET ─────────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -342,6 +343,7 @@ body.city-amsterdam .site-header::after{
 }
 .geo-btn:hover{border-color:var(--c-primary);color:var(--c-primary);background:rgba(191,78,26,.04)}
 .geo-btn.active{background:rgba(22,163,74,.08);border-color:rgba(22,163,74,.35);color:rgb(22,163,74)}
+.geo-btn.geo-error{border-color:rgba(220,38,38,.3);color:#dc2626;background:rgba(220,38,38,.04)}
 .card-distance{
   font-size:.69rem;font-weight:700;color:rgb(22,163,74);
   letter-spacing:.03em;margin-bottom:8px;
@@ -474,15 +476,16 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   display:flex;flex-direction:column;
   overflow:hidden;
   position:relative;
+  contain:content;
   /* Staggered entry */
   opacity:0;
-  animation:cardIn .5s cubic-bezier(.22,1,.36,1) forwards;
-  transition:box-shadow .3s ease,transform .3s ease,border-color .2s;
+  animation:cardIn .45s cubic-bezier(.22,1,.36,1) forwards;
+  transition:box-shadow .25s ease,transform .25s ease,border-color .2s;
 }
 .card:hover{
-  box-shadow:var(--shadow-hover), inset 3px 0 0 0 var(--c-primary);
+  box-shadow:var(--shadow-hover);
   transform:translateY(-4px);
-  border-color:rgba(191,78,26,.2);
+  border-color:rgba(191,78,26,.28);
 }
 
 @keyframes cardIn{
@@ -523,6 +526,7 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   color:var(--ink);line-height:1.2;
   margin-bottom:4px;
   letter-spacing:-.01em;
+  overflow-wrap:break-word;
 }
 
 .card-address{
@@ -829,6 +833,14 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   .card-name{font-size:1rem}
   .section-header h2{font-size:1.3rem}
 }
+
+@media(prefers-reduced-motion:reduce){
+  .card{animation:none;opacity:1}
+  .site-header::after{animation:none;opacity:.18}
+  .surprise-dice{animation:none}
+  .dot{animation:none;opacity:.5}
+  *,*::before,*::after{transition-duration:.01ms !important}
+}
 </style>
 </head>
 <body class="city-barcelona">
@@ -947,7 +959,7 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
 </footer>
 
 <!-- FAB: añadir restaurante -->
-<button class="fab" onclick="openModal()" title="Añadir restaurante">+</button>
+<button class="fab" onclick="openModal()" title="Añadir restaurante" aria-label="Añadir restaurante">+</button>
 
 <!-- MODAL: añadir restaurante -->
 <div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
@@ -959,11 +971,11 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
     <form id="add-form" onsubmit="submitRestaurant(event)">
       <div class="form-row">
         <label for="f-name">Nombre del restaurante *</label>
-        <input id="f-name" type="text" required placeholder="Ej. Bar del Pla">
+        <input id="f-name" type="text" required maxlength="120" placeholder="Ej. Bar del Pla">
       </div>
       <div class="form-row">
         <label for="f-address">Dirección completa *</label>
-        <input id="f-address" type="text" required placeholder="Ej. Carrer de la Montcada 2, Barcelona">
+        <input id="f-address" type="text" required maxlength="200" placeholder="Ej. Carrer de la Montcada 2, Barcelona">
       </div>
       <div class="form-row-2">
         <div class="form-row" style="margin-bottom:0">
@@ -976,16 +988,16 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
         </div>
         <div class="form-row" style="margin-bottom:0">
           <label for="f-hood">Barrio</label>
-          <input id="f-hood" type="text" placeholder="Ej. Eixample">
+          <input id="f-hood" type="text" maxlength="60" placeholder="Ej. Eixample">
         </div>
       </div>
       <div class="form-row" style="margin-top:14px">
         <label for="f-url">URL de Google Maps</label>
-        <input id="f-url" type="url" placeholder="https://maps.google.com/...">
+        <input id="f-url" type="url" maxlength="500" placeholder="https://maps.google.com/...">
       </div>
       <div class="form-row">
         <label for="f-dishes">Qué pedir (separado por comas)</label>
-        <input id="f-dishes" type="text" placeholder="Ej. Bocata de calamares, Patatas bravas">
+        <input id="f-dishes" type="text" maxlength="300" placeholder="Ej. Bocata de calamares, Patatas bravas">
       </div>
       <button class="form-submit" type="submit">Añadir a la lista</button>
     </form>
@@ -1004,7 +1016,7 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
     <div class="surprise-header">
       <span class="surprise-dice" id="surprise-dice">🎲</span>
       <span class="surprise-lbl">Restaurante del momento</span>
-      <button class="surprise-close" onclick="closeSurprise()">×</button>
+      <button class="surprise-close" onclick="closeSurprise()" aria-label="Cerrar">×</button>
     </div>
     <div class="surprise-body" id="surprise-body"></div>
     <div class="surprise-footer">
@@ -1018,7 +1030,7 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
 </div>
 
 
-<button class="scrolltop" id="scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver arriba">
+<button class="scrolltop" id="scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver arriba" aria-label="Volver arriba">
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
@@ -1079,6 +1091,7 @@ function switchCity(city) {
   currentCity = city;
   searchQuery = '';
   currentCuisine = 'all';
+  _chipsBuiltForCity = null;
   document.getElementById('search').value = '';
 
   // Body class
@@ -1158,14 +1171,17 @@ function render() {
 function renderGrid(gridId, list) {
   const grid = document.getElementById(gridId);
   if (!list.length) {
-    grid.innerHTML = '<div class="empty"><p>Sin resultados</p></div>';
+    const msg = searchQuery
+      ? `Sin resultados para <em>${escHtml(searchQuery)}</em>`
+      : 'No hay restaurantes guardados aquí todavía';
+    grid.innerHTML = `<div class="empty"><p>${msg}</p></div>`;
     return;
   }
   grid.innerHTML = list.map((r, i) => cardHTML(r, i)).join('');
 }
 
 function cardHTML(r, i) {
-  const delay = Math.min(i * 0.045, 0.8).toFixed(3);
+  const delay = Math.min(i * 0.03, 0.45).toFixed(3);
   const hoodHTML = r.h && r.h !== r.c
     ? `<span class="card-hood">${r.h}</span>`
     : '';
@@ -1257,24 +1273,36 @@ function getCuisine(r) {
   return _cuisineCache.get(k);
 }
 
-function buildCuisineChips() {
-  const cityKey = CITY_KEY[currentCity];
-  const counts = {};
-  RESTAURANTS.filter(r => r.c === cityKey).forEach(r => {
-    const cat = getCuisine(r);
-    counts[cat] = (counts[cat] || 0) + 1;
-  });
-  const cats = Object.entries(counts)
-    .filter(([, n]) => n > 0)
-    .sort((a, b) => b[1] - a[1])
-    .map(([cat]) => cat);
+let _chipsBuiltForCity = null;
 
+function buildCuisineChips() {
   const container = document.getElementById('cuisine-chips');
-  container.innerHTML =
-    `<button class="chip ${currentCuisine === 'all' ? 'active' : ''}" onclick="setCuisine('all')">Todos</button>` +
-    cats.map(cat =>
-      `<button class="chip ${currentCuisine === cat ? 'active' : ''}" onclick="setCuisine('${escHtml(cat)}')">${escHtml(cat)}</button>`
-    ).join('');
+
+  if (currentCity !== _chipsBuiltForCity) {
+    // Full rebuild only on city change
+    _chipsBuiltForCity = currentCity;
+    const cityKey = CITY_KEY[currentCity];
+    const counts = {};
+    RESTAURANTS.filter(r => r.c === cityKey).forEach(r => {
+      const cat = getCuisine(r);
+      counts[cat] = (counts[cat] || 0) + 1;
+    });
+    const cats = Object.entries(counts)
+      .filter(([, n]) => n > 0)
+      .sort((a, b) => b[1] - a[1])
+      .map(([cat]) => cat);
+    container.innerHTML =
+      `<button class="chip ${currentCuisine === 'all' ? 'active' : ''}" onclick="setCuisine('all')">Todos</button>` +
+      cats.map(cat =>
+        `<button class="chip ${currentCuisine === cat ? 'active' : ''}" onclick="setCuisine(this.dataset.cat)" data-cat="${escHtml(cat)}">${escHtml(cat)}</button>`
+      ).join('');
+  } else {
+    // Just toggle active class — no DOM rebuild
+    container.querySelectorAll('.chip').forEach(btn => {
+      const cat = btn.dataset.cat || 'all';
+      btn.classList.toggle('active', cat === currentCuisine);
+    });
+  }
 }
 
 function setCuisine(cat) {
@@ -1361,33 +1389,54 @@ function getRestaurantCoords(r) {
 }
 
 function toggleGeo() {
+  const btn = document.getElementById('geo-btn');
   if (geoMode) {
     geoMode = false; userLat = null; userLon = null;
-    document.getElementById('geo-btn').classList.remove('active');
+    btn.classList.remove('active');
     render();
     return;
   }
   if (!navigator.geolocation) {
-    alert('Geolocalización no disponible en este navegador.');
+    _geoFeedback(btn, 'Sin soporte GPS');
     return;
   }
+  btn.textContent = '📍 Localizando…';
+  btn.disabled = true;
   navigator.geolocation.getCurrentPosition(
     pos => {
+      btn.disabled = false;
+      btn.textContent = '📍 Cerca de mí';
       userLat = pos.coords.latitude;
       userLon = pos.coords.longitude;
       geoMode = true;
-      document.getElementById('geo-btn').classList.add('active');
+      btn.classList.add('active');
       render();
     },
-    () => alert('No se pudo obtener tu ubicación. Asegúrate de dar permiso.')
+    () => {
+      btn.disabled = false;
+      btn.textContent = '📍 Cerca de mí';
+      _geoFeedback(btn, 'Sin permiso de ubicación');
+    }
   );
 }
 
-/* ─── SEARCH ─────────────────────────────────────────────── */
-function onSearch(val) {
-  searchQuery = val;
-  render();
+function _geoFeedback(btn, msg) {
+  btn.textContent = '📍 ' + msg;
+  btn.classList.add('geo-error');
+  setTimeout(() => {
+    btn.textContent = '📍 Cerca de mí';
+    btn.classList.remove('geo-error');
+  }, 3000);
 }
+
+/* ─── SEARCH ─────────────────────────────────────────────── */
+function debounce(fn, ms) {
+  let t;
+  return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
+}
+
+const _debouncedRenderSearch = debounce(val => { searchQuery = val; render(); }, 150);
+function onSearch(val) { _debouncedRenderSearch(val); }
 
 
 
@@ -1397,11 +1446,9 @@ function downloadKML() {
   const list = RESTAURANTS.filter(r => r.c === cityKey);
 
   const placemarks = list.map(r => {
-    const coords = r.u
-      ? r.u.match(/[@!](-?\d+\.\d+),(-?\d+\.\d+)/)
-      : null;
-    const lat = coords ? coords[1] : '';
-    const lon = coords ? coords[2] : '';
+    const coords = extractCoords(r.u);
+    const lat = coords ? coords[0] : '';
+    const lon = coords ? coords[1] : '';
     const desc = (PLATOS[r.n + '|' + r.c] || []).join(', ');
     return `  <Placemark>
     <name>${escHtml(r.n)}</name>
@@ -1429,9 +1476,16 @@ ${placemarks}
 
 /* ─── SCROLL ─────────────────────────────────────────────── */
 function setupScroll() {
+  const btn = document.getElementById('scrolltop');
+  let ticking = false;
   window.addEventListener('scroll', () => {
-    const btn = document.getElementById('scrolltop');
-    btn.classList.toggle('show', window.scrollY > 400);
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        btn.classList.toggle('show', window.scrollY > 400);
+        ticking = false;
+      });
+      ticking = true;
+    }
   }, { passive: true });
 }
 
@@ -1444,7 +1498,8 @@ function loadCustom() {
 }
 
 function saveCustom(list) {
-  localStorage.setItem(CUSTOM_KEY, JSON.stringify(list));
+  try { localStorage.setItem(CUSTOM_KEY, JSON.stringify(list)); }
+  catch { /* private mode or quota exceeded — in-memory state still works */ }
 }
 
 function mergeCustomIntoRestaurants() {
@@ -1519,7 +1574,7 @@ function renderCustomList() {
         <div class="custom-item-name">${escHtml(r.n)}</div>
         <div class="custom-item-city">${escHtml(r.c)} · ${escHtml(r.h)}</div>
       </div>
-      <button class="custom-item-del" onclick="deleteCustom(${i})" title="Eliminar">×</button>
+      <button class="custom-item-del" onclick="deleteCustom(${i})" title="Eliminar" aria-label="Eliminar ${escHtml(r.n)}">×</button>
     </div>
   `).join('');
 }
