@@ -942,7 +942,7 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
 <footer class="napkin-footer">
   <p class="napkin-main">Hecho con ♥ y hambre</p>
   <div class="napkin-sep"></div>
-  <p class="napkin-by">por <button class="napkin-zaswear" onclick="openContactModal()">Zaswear</button></p>
+  <p class="napkin-by">por <a class="napkin-zaswear" href="https://github.com/zaswear/tengohambre/issues/new" target="_blank" rel="noopener">Zaswear</a></p>
   <span class="napkin-thanks">Gracias por su visita</span>
 </footer>
 
@@ -1017,29 +1017,6 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   </div>
 </div>
 
-<!-- MODAL: contacto -->
-<div class="modal-overlay" id="contact-overlay" onclick="closeContactOutside(event)">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contact-title">
-    <button class="modal-close" onclick="closeContactModal()" aria-label="Cerrar">×</button>
-    <div class="modal-title" id="contact-title">Escríbeme</div>
-    <p class="modal-sub">Se abrirá tu cliente de correo con el mensaje listo para enviar a zaswear@gmail.com</p>
-    <form id="contact-form" onsubmit="submitContact(event)">
-      <div class="form-row">
-        <label for="c-name">Tu nombre (opcional)</label>
-        <input id="c-name" type="text" placeholder="Ej. María García">
-      </div>
-      <div class="form-row">
-        <label for="c-subject">Asunto</label>
-        <input id="c-subject" type="text" placeholder="Ej. Restaurante que te va a encantar">
-      </div>
-      <div class="form-row">
-        <label for="c-body">Mensaje *</label>
-        <textarea id="c-body" required placeholder="Cuéntame..."></textarea>
-      </div>
-      <button class="form-submit" type="submit">Enviar mensaje</button>
-    </form>
-  </div>
-</div>
 
 <button class="scrolltop" id="scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver arriba">
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
@@ -1558,34 +1535,9 @@ function deleteCustom(idx) {
   render();
 }
 
-/* ─── CONTACT MODAL ──────────────────────────────────────── */
-function openContactModal() {
-  document.getElementById('contact-overlay').classList.add('open');
-  setTimeout(() => document.getElementById('c-name').focus(), 50);
-}
-
-function closeContactModal() {
-  document.getElementById('contact-overlay').classList.remove('open');
-}
-
-function closeContactOutside(e) {
-  if (e.target === document.getElementById('contact-overlay')) closeContactModal();
-}
-
-function submitContact(e) {
-  e.preventDefault();
-  const name    = document.getElementById('c-name').value.trim();
-  const subject = document.getElementById('c-subject').value.trim() || 'Mensaje desde Tengo Hambre';
-  const body    = document.getElementById('c-body').value.trim();
-  const fullBody = name ? `De: ${name}\n\n${body}` : body;
-  window.location.href = `mailto:zaswear@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullBody)}`;
-  closeContactModal();
-  document.getElementById('contact-form').reset();
-}
-
 // Keyboard: Escape closes modals
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closeModal(); closeSurprise(); closeContactModal(); }
+  if (e.key === 'Escape') { closeModal(); closeSurprise(); }
 });
 </script>
 
