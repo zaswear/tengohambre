@@ -1,0 +1,650 @@
+{
+  "Madre|Amsterdam": [
+    "Cacio e Pepe",
+    "Carbonara",
+    "Carciofi alla Romana",
+    "Tiramisu"
+  ],
+  "Portugalia Tasca|Amsterdam": [
+    "Bacalhau à Brás",
+    "Pastéis de Nata",
+    "Arroz de Marisco",
+    "Caldo Verde"
+  ],
+  "L'Entrecôte et les Dames|Amsterdam": [
+    "Entrecôte",
+    "Salade Maison",
+    "Pommes Frites",
+    "Sauce Béarnaise"
+  ],
+  "Stek|Amsterdam": [
+    "Entrecôte",
+    "Côte de Boeuf",
+    "Filet Mignon",
+    "Rib Eye"
+  ],
+  "Knijn Bowling & Restaurant|Amsterdam": [
+    "Bitterballen",
+    "Kroket",
+    "Paling Gerookt",
+    "Kaas Soufflé"
+  ],
+  "Esh Pitabar|Amsterdam": [
+    "Pita Kebab",
+    "Falafel",
+    "Hummus",
+    "Shawarma"
+  ],
+  "New York Pizza|Amsterdam": [
+    "Margherita Pizza",
+    "Pepperoni Pizza",
+    "New York Style Pizza",
+    "Quattro Formaggi"
+  ],
+  "Malevo|Barcelona": [
+    "Carne a la parrilla",
+    "Asado de tira",
+    "Choripán",
+    "Empanadas"
+  ],
+  "Tino - esto no es una pizza | Barcelona|Barcelona": [
+    "Focaccia con Tomate y Aceite",
+    "Pizza Romana",
+    "Supplí al Ragù",
+    "Tiramisu"
+  ],
+  "Can Pollastre|Barcelona": [
+    "Pollo a la Brasa",
+    "Patatas Bravas",
+    "Escalivada",
+    "Crema Catalana"
+  ],
+  "Bar Torpedo|Barcelona": [
+    "Croquetas de Jamón",
+    "Pulpo a la Gallega",
+    "Jamón Ibérico",
+    "Tabla de Quesos"
+  ],
+  "Cervecería Vaso de Oro|Barcelona": [
+    "Jamón Ibérico",
+    "Croquetas de Jamón",
+    "Boquerones en Vinagre",
+    "Tabla de Quesos"
+  ],
+  "Kawamura|Barcelona": [
+    "Sushi de Atún Rojo",
+    "Nigiri Variado",
+    "Rollos de Tempura",
+    "Sashimi Mixto"
+  ],
+  "Auto Rosellon|Barcelona": [
+    "Escalivada",
+    "Pan con tomate",
+    "Croquetas de jamón",
+    "Secreto ibérico"
+  ],
+  "Hideout Burger|Barcelona": [
+    "Hideout Burger",
+    "Crispy Bacon Burger",
+    "Truffle Fries",
+    "Hideout Special"
+  ],
+  "Can Recasens|Barcelona": [
+    "Fideuà",
+    "Arroz a la Cazuela",
+    "Suquet de Peix",
+    "Calcots a la Brasa"
+  ],
+  "Mustà Shawarma|Barcelona": [
+    "Shawarma de Pollo",
+    "Shawarma de Ternera",
+    "Falafel",
+    "Hummus"
+  ],
+  "Makamaka Beach Burger Café|Barcelona": [
+    "Makamaka Burger",
+    "Fresh Fish Burger",
+    "Surf Burger",
+    "Sweet Potato Fries"
+  ],
+  "La Porca Burgers|Barcelona": [
+    "La Porca Burger",
+    "Bacon Burger",
+    "Cheese Burger",
+    "Crispy Fries"
+  ],
+  "Almalibre Açaí House Barcelona|Barcelona": [
+    "Açaí Bowl",
+    "Granola Bowl",
+    "Tropical Smoothie",
+    "Açaí Sorbet"
+  ],
+  "Bun Bo Raval|Barcelona": [
+    "Bun Bo Hue",
+    "Bun Cha",
+    "Pho Bo",
+    "Banh Mi"
+  ],
+  "Collage Cocktail Bar|Barcelona": [
+    "Mojito Collage",
+    "Daiquiri Clásico",
+    "Negroni",
+    "Margarita"
+  ],
+  "Monsieur Bosc|Barcelona": [
+    "Escalivada",
+    "Botifarra amb mongetes",
+    "Fideuà",
+    "Crema Catalana"
+  ],
+  "Buenas Migas|Barcelona": [
+    "Tostadas de Aguacate",
+    "Huevos Rotos",
+    "Café con Tostadas",
+    "Zumo Natural"
+  ],
+  "Parking Pizza SANT JOAN|Barcelona": [
+    "Pizza Margherita",
+    "Pizza Carbonara",
+    "Pizza Quattro Formaggi",
+    "Pizza Española"
+  ],
+  "GAME Pau Claris|Barcelona": [
+    "Hamburguesa de Wagyu",
+    "Croquetas de Jamón",
+    "Costillas BBQ",
+    "Tabla de Quesos y Embutidos"
+  ],
+  "Arepamundi|Barcelona": [
+    "Arepa de Queso",
+    "Arepa de Carne Mechada",
+    "Arepa de Pollo Deshilachado",
+    "Tequeños"
+  ],
+  "McDonald's|Barcelona": [
+    "Big Mac",
+    "McChicken",
+    "Patatas Fritas",
+    "McFlurry"
+  ],
+  "Chicken Shop y Dirty Burger|Barcelona": [
+    "Pollo Frito",
+    "Dirty Burger",
+    "Patatas Bravas",
+    "Sándwich de Pollo"
+  ],
+  "Restaurant Gokoku|Barcelona": [
+    "Ramen de cerdo",
+    "Gyoza",
+    "Tonkotsu",
+    "Edamame"
+  ],
+  "Carrefour|Barcelona": [
+    "Pollo Asado",
+    "Paella",
+    "Croquetas de Jamón",
+    "Ensalada Mediterránea"
+  ],
+  "Toyo - Restaurant Japonès a Gràcia|Barcelona": [
+    "Nigiri de atún rojo",
+    "Ramen de tonkotsu",
+    "Tempura de verduras",
+    "Gyoza al vapor"
+  ],
+  "Enrique Tomás|Barcelona": [
+    "Jamón Ibérico de Bellota",
+    "Jamón Serrano Reserva",
+    "Tabla de Embutidos Ibéricos",
+    "Croquetas de Jamón"
+  ],
+  "Chiringuito Escribà|Barcelona": [
+    "Paella de marisco",
+    "Arroz a banda",
+    "Fideuà",
+    "Espetos a la sal"
+  ],
+  "Wittmore Hotel, an SLH Hotel|Barcelona": [
+    "Escalivada",
+    "Bacalao a la Llauna",
+    "Calamar a la Romana",
+    "Crema Catalana"
+  ],
+  "Ukai Eixample|Barcelona": [
+    "Teppanyaki de ternera",
+    "Gambas al ajillo",
+    "Salmón a la parrilla",
+    "Arroz con marisco"
+  ],
+  "Domino's Pizza|Barcelona": [
+    "Pizza Pepperoni",
+    "Pizza Margherita",
+    "Chicken Wings",
+    "Garlic Bread"
+  ],
+  "El Nacional Barcelona|Barcelona": [
+    "Jamón Ibérico",
+    "Bacalao a la Llauna",
+    "Croquetas de Jamón",
+    "Pulpo a la Gallega"
+  ],
+  "Palo Alto|Barcelona": [
+    "Arroz a banda",
+    "Paella de marisco",
+    "Fideuà",
+    "Suquet de peix"
+  ],
+  "Rosa Negra (Vía Laietana) Bar & Restaurante Mexicano|Barcelona": [
+    "Chiles Rellenos",
+    "Mole Poblano",
+    "Carne Asada",
+    "Enchiladas Verdes"
+  ],
+  "Tickets bar|Barcelona": [
+    "Jamón Ibérico",
+    "Croquetas de Jamón",
+    "Pulpo a la Gallega",
+    "Croquetas de Bacalao"
+  ],
+  "Herbolario Navarro - Barcelona Carrer de València 186|Barcelona": [
+    "Ensalada de vegetales frescos",
+    "Zumo natural detox",
+    "Hamburguesa vegana",
+    "Smoothie bowl"
+  ],
+  "Taktika Berri|Barcelona": [
+    "Pintxos de bacalao",
+    "Croquetas de jamón",
+    "Txuleta de buey",
+    "Piquillo relleno de queso"
+  ],
+  "Horchatería El Tío Che|Barcelona": [
+    "Horchata de chufa",
+    "Ensaimada",
+    "Fartons",
+    "Coca de recapte"
+  ],
+  "BELGIOUS|Barcelona": [
+    "Mejillones a la Belga",
+    "Papas a la Francesa",
+    "Croquetas de Queso",
+    "Filete a la Parrilla"
+  ],
+  "La Vietnamita|Barcelona": [
+    "Phở",
+    "Bánh Mì",
+    "Gỏi Cuốn",
+    "Cơm Tấm"
+  ],
+  "La Taguara Areperia|Barcelona": [
+    "Arepa de Queso",
+    "Arepa de Carne Mechada",
+    "Arepa de Pollo",
+    "Arepa de Atún"
+  ],
+  "Baladi|Barcelona": [
+    "Hummus",
+    "Falafel",
+    "Kebab de cordero",
+    "Tabulé"
+  ],
+  "Van Van VAR x BIEN Kebab|Barcelona": [
+    "Kebab de Ternera",
+    "Kebab de Pollo",
+    "Falafel",
+    "Shawarma"
+  ],
+  "Petit Bangkok|Barcelona": [
+    "Pad Thai",
+    "Tom Yum Goong",
+    "Curry Rojo",
+    "Pollo Satay"
+  ],
+  "Syra|Barcelona": [
+    "Pulpo a la Gallega",
+    "Croquetas de Jamón",
+    "Gambas al Ajillo",
+    "Tabla de Quesos y Embutidos"
+  ],
+  "Yashima / Teppanyaki|Barcelona": [
+    "Hibachi Steak",
+    "Camarones al Teppanyaki",
+    "Pollo Teriyaki",
+    "Rollitos de Verdura"
+  ],
+  "La Polpa|Barcelona": [
+    "Carne a la Sal",
+    "Carne Madurada",
+    "Secreto Ibérico",
+    "Carne de Wagyu"
+  ],
+  "Futon Espai (showroom & outlet)|Barcelona": [
+    "Sushi de atún rojo",
+    "Nigiri variado",
+    "Rolls especiales",
+    "Sashimi surtido"
+  ],
+  "Brunch & Cake|Barcelona": [
+    "Avocado Toast",
+    "Pancakes",
+    "Eggs Benedict",
+    "French Toast"
+  ],
+  "The Fish & Chips Shop|Barcelona": [
+    "Fish and Chips",
+    "Calamares a la Romana",
+    "Gambas al Ajillo",
+    "Tabla de Pescaítos Fritos"
+  ],
+  "Gelaaati DI MARCO.|Barcelona": [
+    "Gelato di Pistachio",
+    "Gelato di Stracciatella",
+    "Gelato di Nocciola",
+    "Gelato di Cioccolato"
+  ],
+  "99 Sushi Bar BCN|Barcelona": [
+    "Nigiri de atún rojo",
+    "Rollos Philadelphia",
+    "Tempura de camarones",
+    "Sashimi variado"
+  ],
+  "Yatai | Barcelona|Barcelona": [
+    "Ramen de cerdo",
+    "Gyoza",
+    "Donburi de ternera",
+    "Edamame"
+  ],
+  "Indochine Ly Leap Restaurant|Barcelona": [
+    "Pho",
+    "Banh Mi",
+    "Pad Thai",
+    "Goi Cuon"
+  ],
+  "Koyuki|Barcelona": [
+    "Sushi de atún rojo",
+    "Ramen de miso",
+    "Gyoza al vapor",
+    "Tempura de verduras"
+  ],
+  "Nata's Cafe Barcelona|Barcelona": [
+    "Nata",
+    "Café con leche",
+    "Croissant",
+    "Tostada con tomate"
+  ],
+  "Ca la merce|Barcelona": [
+    "Calcots a la brasa",
+    "Escalivada",
+    "Botifarra amb mongetes",
+    "Crema Catalana"
+  ],
+  "Giulietta Cafè | Pastelería, Restaurante y Catering|Barcelona": [
+    "Croissant de Chocolate",
+    "Café con Tarta de Queso",
+    "Ensalada Mediterránea",
+    "Pasta Fresca"
+  ],
+  "Ikibana Born | Restaurante japonés|Barcelona": [
+    "Nigiri Sushi",
+    "Maki Rolls",
+    "Tempura",
+    "Ramen"
+  ],
+  "Bar Calders|Barcelona": [
+    "Calcots a la brasa",
+    "Escalivada",
+    "Botifarra amb mongetes",
+    "Conill amb xocolata"
+  ],
+  "Santa Ceviche|Barcelona": [
+    "Ceviche Clásico",
+    "Ceviche Mixto",
+    "Tiradito de Salmón",
+    "Causa Limeña"
+  ],
+  "Horchatería Sirvent Parlament 56|Barcelona": [
+    "Horchata con fartons",
+    "Café con leche",
+    "Granizado de café",
+    "Ensaimada"
+  ],
+  "Bar Restaurant Cervantes|Barcelona": [
+    "Croquetas de Jamón",
+    "Pulpo a la Gallega",
+    "Jamón Ibérico",
+    "Patatas Bravas"
+  ],
+  "Ten's Tapas Restaurant Barcelona|Barcelona": [
+    "Jamón Ibérico",
+    "Pulpo a la Gallega",
+    "Croquetas de Jamón",
+    "Patatas Bravas"
+  ],
+  "Can Kenji|Barcelona": [
+    "Kaiseki",
+    "Sushi Omakase",
+    "Robata Yaki",
+    "Miso Soup"
+  ],
+  "Tonkotsu Ramen & Asian Street Food|Barcelona": [
+    "Tonkotsu Ramen",
+    "Gyoza",
+    "Takoyaki",
+    "Pad Thai"
+  ],
+  "Maido|Barcelona": [
+    "Nikkei Ceviche",
+    "Tiradito de Atún",
+    "Gyozas de Camarones",
+    "Arroz con Mariscos"
+  ],
+  "Mayura Restaurante Indio|Barcelona": [
+    "Tandoori Chicken",
+    "Butter Chicken",
+    "Lamb Vindaloo",
+    "Naan Bread"
+  ],
+  "Restaurante japonés Mikasa|Barcelona": [
+    "Nigiri Surtido",
+    "Maki Especial Mikasa",
+    "Ramen Tonkotsu",
+    "Gyoza"
+  ],
+  "VegetArt Cuina Vegana TAKE AWAY|Barcelona": [
+    "Burger Vegana",
+    "Pizza Vegana",
+    "Pasta a la Boloñesa Vegana",
+    "Ensalada de la Casa"
+  ],
+  "Bienmesabe|Barcelona": [
+    "Coca de recapte",
+    "Escalivada",
+    "Fideuà",
+    "Crema Catalana"
+  ],
+  "Teresa Carles|Barcelona": [
+    "Escalivada",
+    "Albergínia farcida",
+    "Espaguetis de verdures",
+    "Crema de cacau"
+  ],
+  "FEELD ORGANIC|Barcelona": [
+    "Ensalada Orgánica de Temporada",
+    "Smoothie Bowl de Frutas Frescas",
+    "Tabla de Quesos y Embutidos Ecológicos",
+    "Zumo Detox Verde"
+  ],
+  "O’Sfizio fritto|Utrecht": [
+    "Arancini",
+    "Pasta alla Norma",
+    "Camarones Fritos",
+    "Croquetas Sicilianas"
+  ],
+  "De Bee's Hive|Utrecht": [
+    "Bienenstich",
+    "Honigkuchen",
+    "Blätterteig mit Honig",
+    "Bienenstock Torte"
+  ],
+  "Chillz|Utrecht": [
+    "Pulled Pork Burger",
+    "Crispy Chicken Sandwich",
+    "BBQ Ribs",
+    "Loaded Fries"
+  ],
+  "The Streetfood Club Utrecht|Utrecht": [
+    "Bao Buns",
+    "Pad Thai",
+    "Spring Rolls",
+    "Satay Skewers"
+  ],
+  "Restaurant San Siro|Utrecht": [
+    "Ossobuco",
+    "Risotto alla Milanese",
+    "Cotoletta alla Milanese",
+    "Panna Cotta"
+  ],
+  "Trattoria Polpette|Utrecht": [
+    "Polpette al Ragù",
+    "Tagliatelle alla Bolognese",
+    "Risotto ai Funghi",
+    "Tiramisu"
+  ],
+  "Casa Ferreira - TO GO|Utrecht": [
+    "Pastéis de Nata",
+    "Francesinha",
+    "Arroz de Marisco",
+    "Bacalhau à Brás"
+  ],
+  "Farina - Italian Comfort Food|Utrecht": [
+    "Pasta Carbonara",
+    "Risotto ai Funghi",
+    "Osso Buco",
+    "Tiramisu"
+  ],
+  "Ombretta Utrecht|Utrecht": [
+    "Pasta Carbonara",
+    "Risotto ai Funghi",
+    "Osso Buco",
+    "Tiramisu"
+  ],
+  "Trattoria da Roberto Utrecht 🇮🇹|Utrecht": [
+    "Pasta Carbonara",
+    "Risotto ai Funghi",
+    "Osso Buco",
+    "Tiramisu"
+  ],
+  "Takumi Ramen Utrecht Vredenburg|Utrecht": [
+    "Tonkotsu Ramen",
+    "Miso Ramen",
+    "Gyoza",
+    "Karaage"
+  ],
+  "Have A Roll Utrecht|Utrecht": [
+    "California Roll",
+    "Philadelphia Roll",
+    "Dragon Roll",
+    "Spicy Tuna Roll"
+  ],
+  "Soep-er Utrecht|Utrecht": [
+    "Soep van de dag",
+    "Tomatensoep",
+    "Champignonsoep",
+    "Uiensoep"
+  ],
+  "SHOKUDO Japanese Food & Design|Utrecht": [
+    "Ramen",
+    "Donburi",
+    "Gyoza",
+    "Tempura"
+  ],
+  "Wandee Thaise Massage Utrecht 💆|Utrecht": [
+    "Pad Thai",
+    "Som Tam",
+    "Massaman Curry",
+    "Green Curry"
+  ],
+  "Juuls Hummus|Utrecht": [
+    "Hummus de garbanzos",
+    "Falafel casero",
+    "Pan pita tostado",
+    "Ensalada de tahina"
+  ],
+  "Restaurant Sevilla|Utrecht": [
+    "Espetos",
+    "Gambas al Ajillo",
+    "Rabo de Toro",
+    "Torrijas"
+  ],
+  "Cibari 🇲🇽|Utrecht": [
+    "Tacos al Pastor",
+    "Chiles Rellenos",
+    "Enchiladas Verdes",
+    "Ceviche"
+  ],
+  "Coffee Leute Brauhaus|Utrecht": [
+    "Currywurst",
+    "Schnitzel",
+    "Bockwurst",
+    "Pretzel mit Käse"
+  ],
+  "Karibu - breakfast, coffee, brunch, drinks and events|Utrecht": [
+    "Avocado Toast",
+    "Benedictine Eggs",
+    "Pancakes",
+    "Flat White"
+  ],
+  "deKleineBaron Catering&Coffee|Utrecht": [
+    "Koffie",
+    "Broodjes",
+    "Croissants",
+    "Gebak"
+  ],
+  "Boonzaaijer Bakery and Confectionery|Utrecht": [
+    "Stroopwafels",
+    "Appelflappen",
+    "Uitsmijters",
+    "Hollandse Nieuwe Haring"
+  ],
+  "Vlaamsch Broodhuys Twijnstraat Utrecht|Utrecht": [
+    "Brood de masa madre",
+    "Croissants de mantequilla",
+    "Pan de centeno",
+    "Tarta de manzana holandesa"
+  ],
+  "McDonald's|Utrecht": [
+    "Big Mac",
+    "Quarter Pounder",
+    "McChicken",
+    "Papas Fritas"
+  ],
+  "Brandstof Lunchroom & Bedrijfscatering|Utrecht": [
+    "Broodje Kroket",
+    "Pastrami Sandwich",
+    "Bami Goreng",
+    "Nasi Kuning"
+  ],
+  "Castillo de Haar|Utrecht": [
+    "Kasteel Biefstuk",
+    "Hollandse Poffertjes",
+    "Eendenbout",
+    "Kasteelschotel"
+  ],
+  "Bunk Restaurant Utrecht|Utrecht": [
+    "Bunkburger",
+    "Pulled Pork Sandwich",
+    "Brisket Sandwich",
+    "Mac and Cheese"
+  ],
+  "SONMAT 손맛 Korean Soul Food|Utrecht": [
+    "Bibimbap",
+    "Bulgogi",
+    "Kimchi Jjigae",
+    "Tteokbokki"
+  ],
+  "STAN Utrecht|Utrecht": [
+    "Bitterballen",
+    "Kroket",
+    "Paling gerookt",
+    "Uitsmijter"
+  ]
+}

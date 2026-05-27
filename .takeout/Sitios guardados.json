@@ -1,0 +1,5242 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          5.1153420,
+          52.0989719
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2025-03-16T10:51:00Z",
+        "google_maps_url": "http://maps.google.com/?cid=8051899323479655035",
+        "location": {
+          "address": "Gruttersdijk 42, 3514 BH Utrecht, Países Bajos",
+          "country_code": "NL",
+          "name": "Trattoria Polpette"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          5.0653839,
+          52.0955847
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2024-06-27T16:59:17Z",
+        "google_maps_url": "http://maps.google.com/?cid=12786990537998190922",
+        "location": {
+          "address": "Vaduzdijk 60, 3541 DM Utrecht, Países Bajos",
+          "country_code": "NL",
+          "name": "Essence barbers Leidsche Rijn"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2023-11-09T08:41:18Z",
+        "google_maps_url": "http://maps.google.com/?q=59.335045,18.126798",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2023-05-25T07:47:35Z",
+        "google_maps_url": "http://maps.google.com/?q=59.323336,18.068485",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2023-04-28T06:30:16Z",
+        "google_maps_url": "http://maps.google.com/?q=50.886412,4.359853",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2023-03-15T13:05:27Z",
+        "google_maps_url": "http://maps.google.com/?q=41.397490,2.196716",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-09-30T10:40:18Z",
+        "google_maps_url": "http://maps.google.com/?q=41.387911,2.178702",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-09-09T22:25:39Z",
+        "google_maps_url": "http://maps.google.com/?q=41.403742,2.196483",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-08-02T11:30:29Z",
+        "google_maps_url": "http://maps.google.com/?q=41.377784,2.173146",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-07-24T10:50:36Z",
+        "google_maps_url": "http://maps.google.com/?q=39.209038,-0.234579",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-07-06T10:56:59Z",
+        "google_maps_url": "http://maps.google.com/?q=41.397177,2.159237",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-07-06T10:56:14Z",
+        "google_maps_url": "http://maps.google.com/?q=41.377302,2.161657",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-06-23T11:08:48Z",
+        "google_maps_url": "http://maps.google.com/?q=41.375960,2.161718",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-06-13T13:55:20Z",
+        "google_maps_url": "http://maps.google.com/?q=42.757534,-9.112207",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          5.0940016,
+          52.1043225
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-06-10T21:06:37Z",
+        "google_maps_url": "http://maps.google.com/?cid=2076118537526707009",
+        "location": {
+          "address": "Amsterdamsestraatweg 373, 3551 CK Utrecht, Países Bajos",
+          "country_code": "NL",
+          "name": "Pharmacy Deli-Bergema"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1521917,
+          41.3923703
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-06-04T21:00:40Z",
+        "google_maps_url": "http://maps.google.com/?cid=12249971467945824552",
+        "location": {
+          "address": "C/ de Muntaner, 182, Eixample, 08036 Barcelona, España",
+          "country_code": "ES",
+          "name": "Little Andaman"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-05-23T05:28:10Z",
+        "google_maps_url": "http://maps.google.com/?q=41.393682,2.186543",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-05-14T14:22:03Z",
+        "google_maps_url": "http://maps.google.com/?q=41.325677,2.119072",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -3.7001981,
+          40.4253425
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-04-22T12:34:48Z",
+        "google_maps_url": "http://maps.google.com/?cid=4637650577448199590",
+        "location": {
+          "address": "C. de San Mateo, 3, Centro, 28004 Madrid, España",
+          "country_code": "ES",
+          "name": "LIMBO | Tribunal"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          4.4729198,
+          51.9177644
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-03-13T18:34:13Z",
+        "google_maps_url": "http://maps.google.com/?cid=15425135138253474693",
+        "location": {
+          "address": "Mauritsweg 52, 3012 JW Rotterdam, Países Bajos",
+          "country_code": "NL",
+          "name": "Kaapse Maria"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          5.0997015,
+          52.1007027
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2022-03-12T09:33:10Z",
+        "google_maps_url": "http://maps.google.com/?cid=525323888941210675",
+        "location": {
+          "address": "Amsterdamsestraatweg 266, 3551 CR Utrecht, Países Bajos",
+          "country_code": "NL",
+          "name": "The Small Bicycle Corner"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          5.1475553,
+          52.0853216
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-12-05T21:01:10Z",
+        "google_maps_url": "http://maps.google.com/?cid=10691635199389199881",
+        "location": {
+          "address": "Prins Hendriklaan 50, 3583 EP Utrecht, Países Bajos",
+          "country_code": "NL",
+          "name": "Casa Rietveld Schröder"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-11-23T14:42:30Z",
+        "google_maps_url": "http://maps.google.com/?q=13.740797,100.567589",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-11-08T06:46:22Z",
+        "google_maps_url": "http://maps.google.com/?q=41.452542,2.179497",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-11-06T12:14:13Z",
+        "google_maps_url": "http://maps.google.com/?q=13.746988,100.500631",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-08-04T16:52:49Z",
+        "google_maps_url": "http://maps.google.com/?q=38.346021,-0.486215",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-06-18T11:59:56Z",
+        "google_maps_url": "http://maps.google.com/?q=41.400249,2.203145",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-06-06T10:04:41Z",
+        "google_maps_url": "http://maps.google.com/?q=40.408365,-3.702777",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1578502,
+          41.4004290
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-04-14T16:45:41Z",
+        "google_maps_url": "http://maps.google.com/?cid=13015555905783126685",
+        "location": {
+          "address": "Plaça de la Vila de Gràcia, 7, Gràcia, 08012 Barcelona, España",
+          "country_code": "ES",
+          "name": "Baladi"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-02-20T11:47:52Z",
+        "google_maps_url": "http://maps.google.com/?q=Jakob+Mommas+Gata+3,+Stockholm,+Suecia&ftid=0x465f77e5fde4563d:0x7311282b0da4030f",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2021-01-18T08:33:16Z",
+        "google_maps_url": "http://maps.google.com/?q=41.380644,2.177373",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2020-12-30T06:57:54Z",
+        "google_maps_url": "http://maps.google.com/?q=41.383827,2.162892",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2020-12-05T09:34:06Z",
+        "google_maps_url": "http://maps.google.com/?q=41.551497,2.106843",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1902284,
+          41.3942357
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2020-09-12T19:27:21Z",
+        "google_maps_url": "http://maps.google.com/?cid=4226397108067053575",
+        "location": {
+          "address": "Carrer de Pujades, 27, Sant Martí, 08018 Barcelona, España",
+          "country_code": "ES",
+          "name": "Van Van VAR x BIEN Kebab"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1941982,
+          41.3976024
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2020-02-15T19:30:07Z",
+        "google_maps_url": "http://maps.google.com/?cid=15486091604343870135",
+        "location": {
+          "address": "Carrer d'Àvila, 87, Sant Martí, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "Petit Bangkok"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2020-02-15T09:00:04Z",
+        "google_maps_url": "http://maps.google.com/?q=41.386869,2.161077",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          98.9933196,
+          18.7914110
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2020-01-03T15:55:00Z",
+        "google_maps_url": "http://maps.google.com/?cid=12276262544907885464",
+        "location": {
+          "address": "167 Mun Mueang Rd, Tambon Si Phum, Mueang Chiang Mai District, Chiang Mai 50200, Tailandia",
+          "country_code": "TH",
+          "name": "Grazie Thai Local Food - Wan Ton Noodle"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          98.9932209,
+          18.7927884
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2020-01-02T03:40:17Z",
+        "google_maps_url": "http://maps.google.com/?cid=10071478903819356816",
+        "location": {
+          "address": "199 Mun Mueang Rd, Tambon Si Phum, Mueang Chiang Mai District, Chiang Mai 50200, Tailandia",
+          "country_code": "TH",
+          "name": "THE HOUSE by Ginger"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-12-02T10:06:58Z",
+        "google_maps_url": "http://maps.google.com/?q=43.744291,-7.752484",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          98.9929166,
+          18.7850129
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-11-27T19:24:55Z",
+        "google_maps_url": "http://maps.google.com/?cid=14031975836450648657",
+        "location": {
+          "address": "1 Ratchamanka Rd, Phra Sing, Mueang Chiang Mai District, Chiang Mai 50100, Tailandia",
+          "name": "Elephant Nature Park Office"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          1.8109137,
+          41.2359553
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-29T14:35:38Z",
+        "google_maps_url": "http://maps.google.com/?cid=692522359149386109",
+        "location": {
+          "address": "Carrer Major, 22, 08870 Sitges, Barcelona, España",
+          "country_code": "ES",
+          "name": "IZARRA TABERNA VASCA"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5825391,
+          13.7333573
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T13:53:47Z",
+        "google_maps_url": "http://maps.google.com/?cid=5662130738522121065",
+        "location": {
+          "address": "406 Thong Lo, Khlong Tan Nuea, Watthana, Bangkok 10110, Tailandia",
+          "country_code": "TH",
+          "name": "#FindTheLockerRoom"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5504245,
+          13.7997810
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T13:52:12Z",
+        "google_maps_url": "http://maps.google.com/?cid=10516346959717498187",
+        "location": {
+          "address": "587, 10 Kamphaeng Phet 2 Rd, Khwaeng Chatuchak, Chatuchak, Bangkok 10900, Tailandia",
+          "country_code": "TH",
+          "name": "Chatuchak Weekend Market"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5745488,
+          13.8047015
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T13:50:05Z",
+        "google_maps_url": "http://maps.google.com/?cid=3184249495330552093",
+        "location": {
+          "address": "5 Ratchadaphisek Rd, Chom Phon, Chatuchak, Krung Thep Maha Nakhon 10900, Tailandia",
+          "country_code": "TH",
+          "name": "The One Ratchada"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.4884440,
+          13.7438652
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T13:48:10Z",
+        "google_maps_url": "http://maps.google.com/?cid=9727099538087655581",
+        "location": {
+          "address": "158 Thanon Wang Doem, Wat Arun, Bangkok Yai, Bangkok 10600, Tailandia",
+          "country_code": "TH",
+          "name": "Wat Arun"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.4927733,
+          13.7464237
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T13:48:03Z",
+        "google_maps_url": "http://maps.google.com/?cid=9076048512320389678",
+        "location": {
+          "address": "2 Sanam Chai Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Tailandia",
+          "country_code": "TH",
+          "name": "Wat Phra Chetuphon - Wat Pho (Wat Po)"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5010927,
+          13.7510446
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T13:46:29Z",
+        "google_maps_url": "http://maps.google.com/?cid=4143732516679963601",
+        "location": {
+          "address": "146 Bamrung Mueang Rd, Wat Ratchabophit, Phra Nakhon, Bangkok 10200, Tailandia",
+          "country_code": "TH",
+          "name": "Wat Suthat Thepwararam Ratchaworamahawihan"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5391292,
+          13.7258184
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T13:45:15Z",
+        "google_maps_url": "http://maps.google.com/?cid=6770826101304416391",
+        "location": {
+          "address": "1 Sala Daeng Rd, Si Lom, Bang Rak, Bangkok 10500, Tailandia",
+          "country_code": "TH",
+          "name": "Sook Sabai Health Massage"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5022646,
+          13.7531642
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T13:00:02Z",
+        "google_maps_url": "http://maps.google.com/?cid=9767009674182294700",
+        "location": {
+          "address": "Siri Phong Rd, Samran Rat, Phra Nakhon, Bangkok 10200, Tailandia",
+          "country_code": "TH",
+          "name": "Kope Hya Tai Kee"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5822318,
+          13.7351348
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T12:58:23Z",
+        "google_maps_url": "http://maps.google.com/?cid=2476825380999189822",
+        "location": {
+          "address": "Market Floor theCOMMONS 17 Thong Lo, Khlong Tan Nuea, Watthana, Bangkok 10110, Tailandia",
+          "country_code": "TH",
+          "name": "Roots at the COMMONS"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5416984,
+          13.7314281
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T12:57:46Z",
+        "google_maps_url": "http://maps.google.com/?cid=12394383396962920758",
+        "location": {
+          "address": "Lumphini, Pathum Wan, Bangkok 10330, Tailandia",
+          "country_code": "TH",
+          "name": "Lumphini Park"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5419708,
+          13.7375423
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T12:57:16Z",
+        "google_maps_url": "http://maps.google.com/?cid=15691903004778503066",
+        "location": {
+          "address": "68, 9 Soi Langsuan, Lumphini, Pathum Wan, Bangkok 10330, Tailandia",
+          "country_code": "TH",
+          "name": "WET"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5225179,
+          13.7424996
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T12:55:40Z",
+        "google_maps_url": "http://maps.google.com/?cid=15238757142073429372",
+        "location": {
+          "address": "113 ซอย จรัสเมือง Rong Mueang, Pathum Wan, Bangkok 10330, Tailandia",
+          "country_code": "TH",
+          "name": "Jeh O Chula"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5364243,
+          13.7853841
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-15T12:54:15Z",
+        "google_maps_url": "http://maps.google.com/?cid=10230042769927854174",
+        "location": {
+          "address": "Phibun Watthana 6 Alley, แขวง สามเสนใน Phaya Thai, Bangkok 10400, Tailandia",
+          "country_code": "TH",
+          "name": "Soei"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-04T06:20:10Z",
+        "google_maps_url": "http://maps.google.com/?q=13.685817,100.667625",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          100.5048189,
+          13.7525912
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-10-04T06:16:26Z",
+        "google_maps_url": "http://maps.google.com/?cid=15540702247320146498",
+        "location": {
+          "address": "327 Maha Chai Rd, Samran Rat, Phra Nakhon, Bangkok 10200, Tailandia",
+          "country_code": "TH",
+          "name": "Raan Jay Fai"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2105777,
+          41.4023354
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-09-15T11:36:02Z",
+        "google_maps_url": "http://maps.google.com/?cid=16654720344020754699",
+        "location": {
+          "address": "Carrer de Bac de Roda, 9, Sant Martí, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "Craftbeer Zurich"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-08-07T10:05:00Z",
+        "google_maps_url": "http://maps.google.com/?q=42.555400,-8.631100",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2019-02-04T22:36:10Z",
+        "google_maps_url": "http://maps.google.com/?q=40.700771,-73.939306",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-12-09T21:29:19Z",
+        "google_maps_url": "http://maps.google.com/?q=124-126+Wardour+St,+Soho,+London+W1F+0TY,+Reino+Unido&ftid=0x487604d35ab3b687:0xbd0798954fabdbcb",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1595591,
+          41.4015051
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-10-20T07:43:07Z",
+        "google_maps_url": "http://maps.google.com/?cid=7658197769037870294",
+        "location": {
+          "address": "Carrer de la Mare de Déu dels Desemparats, 8, Gràcia, 08012 Barcelona, España",
+          "country_code": "ES",
+          "name": "Syra"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-09-14T06:40:14Z",
+        "google_maps_url": "http://maps.google.com/?q=51.541624,0.000367",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-09-14T06:36:58Z",
+        "google_maps_url": "http://maps.google.com/?q=41.381012,2.176991",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-06-15T06:04:02Z",
+        "google_maps_url": "http://maps.google.com/?q=59.290472,18.159847",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -9.2032276,
+          38.6975105
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-05-11T14:54:07Z",
+        "google_maps_url": "http://maps.google.com/?cid=18442230332396508773",
+        "location": {
+          "address": "R. de Belém 84 92, 1300-085 Lisboa, Portugal",
+          "country_code": "PT",
+          "name": "Pastelaria Pasteles de Belem"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.4343859,
+          40.2022974
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-05-11T08:54:39Z",
+        "google_maps_url": "http://maps.google.com/?cid=6679628428153394236",
+        "location": {
+          "address": "Largo Rossio de Santa Clara, 3040-256 Coimbra, Portugal",
+          "country_code": "PT",
+          "name": "Portugal de los Pequeños"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-04-01T07:29:37Z",
+        "google_maps_url": "http://maps.google.com/?q=BV-5114,+20,+08479,+Barcelona&ftid=0x12bb2d2c0238fde3:0x7151217be7d3452c",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-02-09T14:37:49Z",
+        "google_maps_url": "http://maps.google.com/?q=Ctra.+Antiga+de+Val%C3%A8ncia,+Badalona,+Barcelona&ftid=0x12a4bca06632f263:0x372b34223a7708f4",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1433000,
+          41.3911000
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2018-02-05T19:46:59Z",
+        "google_maps_url": "http://maps.google.com/?cid=18060974533161931075",
+        "location": {
+          "address": "Av. de Josep Tarradellas, 145, Les Corts, 08029 Barcelona, España",
+          "country_code": "ES",
+          "name": "Yashima / Teppanyaki"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-08-26T08:36:50Z",
+        "google_maps_url": "http://maps.google.com/?q=41.400869,2.203877",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1777241,
+          41.3780022
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-08-15T17:03:26Z",
+        "google_maps_url": "http://maps.google.com/?cid=10771510355735037372",
+        "location": {
+          "address": "Ptge. de la Pau, 11, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "Federal Café Gótico"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1786709,
+          41.3786543
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-08-15T17:03:12Z",
+        "google_maps_url": "http://maps.google.com/?cid=18312065659340990604",
+        "location": {
+          "address": "Pl. del Duc de Medinaceli, 2, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "Chicken Shop y Dirty Burger"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-08-08T14:58:27Z",
+        "google_maps_url": "http://maps.google.com/?q=Gran+Via+de+les+Corts+Catalanes,+820,+08013+Barcelona&ftid=0x12a4a2dff901a3d1:0xafb418c0e3e220aa",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-06-23T05:35:35Z",
+        "google_maps_url": "http://maps.google.com/?q=41.271870,2.045971",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0865527,
+          59.3137141
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-05T18:06:21Z",
+        "google_maps_url": "http://maps.google.com/?cid=2735225504325079641",
+        "location": {
+          "address": "Bondegatan 64, 116 29 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Café Pom & Flora Södermalm"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0572538,
+          59.3381491
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-05T18:00:16Z",
+        "google_maps_url": "http://maps.google.com/?cid=12537754280033114328",
+        "location": {
+          "address": "Drottninggatan 102, 111 60 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Fabrique"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0826209,
+          59.3123465
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-05T17:59:25Z",
+        "google_maps_url": "http://maps.google.com/?cid=15671632989488499346",
+        "location": {
+          "address": "Nytorget 4, 116 40 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Urban Deli Nytorget"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0817761,
+          59.3159496
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-05T17:57:01Z",
+        "google_maps_url": "http://maps.google.com/?cid=12539633517898034940",
+        "location": {
+          "address": "Tjärhovsgatan 19, 116 28 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Greasy Spoon"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0687889,
+          59.3395366
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-04T19:41:40Z",
+        "google_maps_url": "http://maps.google.com/?cid=8248971695728526087",
+        "location": {
+          "address": "Eriksbergsgatan 6, 114 30 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Café Saturnus"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0483715,
+          59.3392067
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-04T19:40:06Z",
+        "google_maps_url": "http://maps.google.com/?cid=13404241441097367783",
+        "location": {
+          "address": "Dalagatan 24, 113 24 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "STHLM Brunch Club"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-02T21:20:01Z",
+        "google_maps_url": "http://maps.google.com/?q=H%C3%B6torget,+111+57+Stockholm,+Suecia&ftid=0x465f9d5d8c184b81:0x6e336cfe5031b064",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.1017094,
+          59.3223377
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-02T20:25:08Z",
+        "google_maps_url": "http://maps.google.com/?cid=2457834262057201723",
+        "location": {
+          "address": "Beckholmsvägen 26, 115 21 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Slipen Bakery"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0703535,
+          59.3258255
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-02T20:24:06Z",
+        "google_maps_url": "http://maps.google.com/?cid=9219421790206784059",
+        "location": {
+          "address": "Trångsund 1, 111 29 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Catedral de San Nicolás de Estocolmo"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.1044438,
+          59.3283606
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-02T20:20:57Z",
+        "google_maps_url": "http://maps.google.com/?cid=14901231548953090717",
+        "location": {
+          "address": "115 21 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Sami Storehouse"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0976228,
+          59.3272302
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-02T20:19:07Z",
+        "google_maps_url": "http://maps.google.com/?cid=15557318619434567988",
+        "location": {
+          "address": "Hazeliusporten 2, 115 21 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Biological Museum"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0963901,
+          59.3233564
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-02T20:15:13Z",
+        "google_maps_url": "http://maps.google.com/?cid=15365966842080649521",
+        "location": {
+          "address": "Lilla Allmänna Gränd 9, 115 21 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Gröna Lund"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0518628,
+          59.3422917
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-02T20:12:22Z",
+        "google_maps_url": "http://maps.google.com/?cid=13868927820055505191",
+        "location": {
+          "address": "Norrtullsgatan 4, 113 29 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Café Pascal"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0479616,
+          59.3184353
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-03-02T13:14:24Z",
+        "google_maps_url": "http://maps.google.com/?cid=1596970648463973608",
+        "location": {
+          "address": "Lundagatan 31, 117 27 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Hotel Stockholm Classic Hotell en Estocolmo"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-02-04T18:11:08Z",
+        "google_maps_url": "http://maps.google.com/?q=Kungsgatan+15,+111+43+Stockholm,+Suecia&ftid=0x465f9d5cfcdb644b:0x497596d4b41f5e9b",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0690764,
+          59.3358732
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-02-04T18:08:24Z",
+        "google_maps_url": "http://maps.google.com/?cid=2521077060180703758",
+        "location": {
+          "address": "Kungsgatan 56, 111 43 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Tank"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0004123,
+          59.3727265
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-02-04T17:14:40Z",
+        "google_maps_url": "http://maps.google.com/?cid=1512505563336468186",
+        "location": {
+          "address": "Råsta Strandväg 1, 169 79 Solna, Suecia",
+          "country_code": "SE",
+          "name": "Friends Arena"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.1604115,
+          59.2898042
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-02-04T17:06:43Z",
+        "google_maps_url": "http://maps.google.com/?cid=12401023488588180332",
+        "location": {
+          "address": "Ältavägen 101, 131 33 Nacka, Suecia",
+          "country_code": "SE",
+          "name": "Hellasgården"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0545886,
+          59.3435474
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-02-04T17:04:44Z",
+        "google_maps_url": "http://maps.google.com/?cid=10269982791216064283",
+        "location": {
+          "address": "Odengatan 53, 113 50 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Biblioteca Pública de Estocolmo"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.1035070,
+          59.2740643
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-02-04T17:02:38Z",
+        "google_maps_url": "http://maps.google.com/?cid=15735871675932644505",
+        "location": {
+          "address": "Kapellslingan 13, 122 33 Enskede, Suecia",
+          "country_code": "SE",
+          "name": "Skogskapellet"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.1018420,
+          59.2690456
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-02-04T16:59:13Z",
+        "google_maps_url": "http://maps.google.com/?cid=15027832904643534733",
+        "location": {
+          "address": "Kapellslingan 25, 122 33 Enskede, Suecia",
+          "country_code": "SE",
+          "name": "Chapel of the Resurrection"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          18.0713630,
+          59.3194120
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2017-02-04T16:48:24Z",
+        "google_maps_url": "http://maps.google.com/?cid=12471480235420536606",
+        "location": {
+          "address": "Peter Myndes backe 5, 116 46 Stockholm, Suecia",
+          "country_code": "SE",
+          "name": "Hotel Frantz, member of WorldHotels Crafted"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-12-03T14:10:33Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+de+Sancho+de+%C3%81vila,+66,+08018+Barcelona&ftid=0x12a4a318933711eb:0xce9979caad3dcf55",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-11-26T05:22:20Z",
+        "google_maps_url": "http://maps.google.com/?q=41.140672,-8.612963",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-11-15T12:02:59Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+de+Montalegre,+6,+08001+Barcelona&ftid=0x12a4a2f4f9be9401:0x8a04c3608f5cd351",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-11-07T14:38:22Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+de+Catalunya,+74,+08840+Viladecans,+Barcelona&ftid=0x12a49cf7c57272e9:0x76e21a688409f7ee",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2487508,
+          41.5521874
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-11-02T18:06:52Z",
+        "google_maps_url": "http://maps.google.com/?cid=14690528504684176384",
+        "location": {
+          "address": "Avinguda de Pompeu Fabra, 2, 08160 Montmeló, Barcelona, España",
+          "country_code": "ES",
+          "name": "Òptica Catafal Montmeló"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1626849,
+          41.3757603
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-31T18:48:21Z",
+        "google_maps_url": "http://maps.google.com/?cid=9714980746604432565",
+        "location": {
+          "address": "Carrer de Viladomat, 10, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "Dream Café"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6095530,
+          41.1477691
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T18:52:04Z",
+        "google_maps_url": "http://maps.google.com/?cid=11291880395299081741",
+        "location": {
+          "address": "R. do Bonjardim 143, 4000-440 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Teatro Rivoli"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6264875,
+          41.1480953
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T18:51:12Z",
+        "google_maps_url": "http://maps.google.com/?cid=7847574896421806130",
+        "location": {
+          "address": "Jardins do Palácio de Cristal, R. de D Manuel II 21, 4050-239 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Biblioteca Municipal Almeida Garrett"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6145977,
+          41.1456705
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T06:45:38Z",
+        "google_maps_url": "http://maps.google.com/?cid=4782476540364618785",
+        "location": {
+          "address": "R. de São Filipe de Nery, 4050-546 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Torre de los Clérigos"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6066041,
+          41.1471799
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T06:44:12Z",
+        "google_maps_url": "http://maps.google.com/?cid=2144751217485211124",
+        "location": {
+          "address": "R. de Santa Catarina 112, 4000-442 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Café Majestic"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6070917,
+          41.1522658
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T06:42:55Z",
+        "google_maps_url": "http://maps.google.com/?cid=12961478340879496697",
+        "location": {
+          "address": "R. do Bolhão 223, 4000-112 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Hotel Dom Henrique Downtown"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T06:41:46Z",
+        "google_maps_url": "http://maps.google.com/?q=Pra%C3%A7a+da+Liberdade,+Porto,+Portugal&ftid=0xd2464e376a8629f:0x7400d25802357d1a",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6095440,
+          41.1454920
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T06:40:03Z",
+        "google_maps_url": "http://maps.google.com/?cid=1319433874625296190",
+        "location": {
+          "address": "Praça de Almeida Garrett, 4000-069 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Porto São Bento"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6307370,
+          41.1588467
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T06:39:53Z",
+        "google_maps_url": "http://maps.google.com/?cid=14077895009127186669",
+        "location": {
+          "address": "Av. da Boavista 604-610 Piso 0, 4149-071 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Casa de la Música"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6147746,
+          41.1469055
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T06:39:27Z",
+        "google_maps_url": "http://maps.google.com/?cid=9153637019004560463",
+        "location": {
+          "address": "R. das Carmelitas 144, 4050-161 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Livraria Lello"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6156725,
+          41.1413772
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-28T06:39:07Z",
+        "google_maps_url": "http://maps.google.com/?cid=7580193080231123281",
+        "location": {
+          "address": "Palácio da Bolsa, R. de Ferreira Borges 11, 4050-253 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Palacio de la Bolsa de Oporto"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6105828,
+          41.1508249
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-27T22:22:40Z",
+        "google_maps_url": "http://maps.google.com/?cid=8969454265382539143",
+        "location": {
+          "address": "Praça Trindade 170, 4000-539 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Iglesia de la Santísima Trinidad"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6056554,
+          41.1498821
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-27T22:21:58Z",
+        "google_maps_url": "http://maps.google.com/?cid=1230150224831809461",
+        "location": {
+          "address": "R. de Santa Catarina 428, 4000-444 Porto, Portugal",
+          "country_code": "PT",
+          "name": "Capilla de las Almas"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.3996306,
+          43.3706778
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-27T18:35:02Z",
+        "google_maps_url": "http://maps.google.com/?cid=9993583743165416341",
+        "location": {
+          "address": "Rúa Torreiro, 6, 15003 A Coruña, España",
+          "country_code": "ES",
+          "name": "La Bombilla"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -7.1579378,
+          43.5539625
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-26T19:33:03Z",
+        "google_maps_url": "http://maps.google.com/?cid=6758105175959833792",
+        "location": {
+          "address": "Praia das Catedrais, 27795, Lugo, España",
+          "country_code": "ES",
+          "name": "Playa de las Catedrales"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.5452832,
+          42.8783823
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-26T10:44:36Z",
+        "google_maps_url": "http://maps.google.com/?cid=4820810135127150943",
+        "location": {
+          "address": "Rúa do Franco, 20, 15702 Santiago de Compostela, A Coruña, España",
+          "country_code": "ES",
+          "name": "El Papatorio Tapas y Brasas"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.5469671,
+          42.8807047
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-26T10:42:25Z",
+        "google_maps_url": "http://maps.google.com/?cid=10583115612247232413",
+        "location": {
+          "address": "Rúa das Hortas, 1, 15705 Santiago de Compostela, A Coruña, España",
+          "country_code": "ES",
+          "name": "Casa Marcelo"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.5393105,
+          42.8754437
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-26T10:40:54Z",
+        "google_maps_url": "http://maps.google.com/?cid=15704713519802710926",
+        "location": {
+          "address": "Rúa do Olvido, 22, 15703 Santiago de Compostela, A Coruña, España",
+          "country_code": "ES",
+          "name": "O Sendeiro"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.4173172,
+          43.3630347
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-23T19:45:42Z",
+        "google_maps_url": "http://maps.google.com/?cid=17881962560473597443",
+        "location": {
+          "address": "de bajo, Rda. Nelle, 117, 15010 A Coruña, España",
+          "name": "Civit Bikes"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.4292933,
+          43.3454114
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-23T19:41:44Z",
+        "google_maps_url": "http://maps.google.com/?cid=7199413500898002852",
+        "location": {
+          "address": "Est. Baños de Arteixo, 43, 15008 A Coruña, España",
+          "country_code": "ES",
+          "name": "Marineda City"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -9.1058444,
+          42.8313354
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-23T19:37:51Z",
+        "google_maps_url": "http://maps.google.com/?cid=10332949373459211367",
+        "location": {
+          "address": "Carnota, La Coruña, España",
+          "name": "playa de carnota"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -9.1163295,
+          42.9127276
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-23T19:36:15Z",
+        "google_maps_url": "http://maps.google.com/?cid=3787142362035004572",
+        "location": {
+          "address": "Rio do Barco, s/n, 15297 Dumbría, A Coruña, España",
+          "country_code": "ES",
+          "name": "Cascada Ézaro"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-23T19:28:58Z",
+        "google_maps_url": "http://maps.google.com/?q=42.342123,-7.854529",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-23T19:27:50Z",
+        "google_maps_url": "http://maps.google.com/?q=42.271347,-8.226528",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.5683130,
+          42.3296201
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-23T19:19:39Z",
+        "google_maps_url": "http://maps.google.com/?cid=16828535345490610352",
+        "location": {
+          "address": "Rúa do Rial, s/n, 36691 O Rial, Pontevedra, España",
+          "country_code": "ES",
+          "name": "Castillo de Soutomaior"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-23T19:13:11Z",
+        "google_maps_url": "http://maps.google.com/?q=Cabo+Vil%C3%A1n,+La+Coru%C3%B1a&ftid=0xd294b10e8115081:0x6e2ffe0b29ad2770",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-22T20:19:25Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+d'Arag%C3%B3,+159,+08011+Barcelona&ftid=0x12a4a288bafdb245:0x78edbfec70c52023",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.0080687,
+          41.5578243
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-21T09:11:02Z",
+        "google_maps_url": "http://maps.google.com/?cid=11711845426565861362",
+        "location": {
+          "address": "Carrer de Vallhonrat, 45, 08221 Terrassa, Barcelona, España",
+          "name": "Flexxible IT (ES-BCN)"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -9.2718910,
+          42.8823935
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-20T10:48:34Z",
+        "google_maps_url": "http://maps.google.com/?cid=2047031956054418531",
+        "location": {
+          "address": "Cabo Fisterra, s/n, 15155 Fisterra, A Coruña, España",
+          "country_code": "ES",
+          "name": "Faro de Finisterre"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-20T10:48:26Z",
+        "google_maps_url": "http://maps.google.com/?q=Finisterre,+La+Coru%C3%B1a&ftid=0xd292c24ce10d29d:0xe6ec667de57e52d3",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -9.0459072,
+          42.5799522
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-20T10:48:23Z",
+        "google_maps_url": "http://maps.google.com/?cid=15414374705343220003",
+        "location": {
+          "address": "Rúa Santa Uxía olv, 15960 Olveira, A Coruña, España",
+          "country_code": "ES",
+          "name": "Parque Natural das Dunas de Corrubedo e as Lagoas de Carregal e Vixán"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -0.0617149,
+          51.5367431
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-14T09:31:17Z",
+        "google_maps_url": "http://maps.google.com/?cid=5864431112876916427",
+        "location": {
+          "address": "35 Broadway Market, London E8 4PH, Reino Unido",
+          "country_code": "GB",
+          "name": "Broadway Market"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -3.7011556,
+          40.4073750
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-13T10:29:22Z",
+        "google_maps_url": "http://maps.google.com/?cid=9657289886343318337",
+        "location": {
+          "address": "C. del Amparo, 82, Centro, 28012 Madrid, España",
+          "country_code": "ES",
+          "name": "Los Chuchis"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -3.7011123,
+          40.4105036
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-13T10:28:56Z",
+        "google_maps_url": "http://maps.google.com/?cid=10799907547865222349",
+        "location": {
+          "address": "C. de San Carlos, 17, Centro, 28012 Madrid, España",
+          "country_code": "ES",
+          "name": "Egeo Suvlakeria Griega"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -3.6985997,
+          40.4114956
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-13T10:27:32Z",
+        "google_maps_url": "http://maps.google.com/?cid=4746436350747532486",
+        "location": {
+          "address": "C. de Sta. Isabel, 5, Centro, 28012 Madrid, España",
+          "country_code": "ES",
+          "name": "YOKALOKA MERCADO Sushi & Ramen"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -3.6987911,
+          40.4115233
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-13T10:27:11Z",
+        "google_maps_url": "http://maps.google.com/?cid=14607306496988241678",
+        "location": {
+          "address": "Mercado Antón Martín, C. de Sta. Isabel, 5, Planta Baja, Centro, 28012 Madrid, España",
+          "country_code": "ES",
+          "name": "Cutzamala Mex Food"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -3.6945569,
+          40.4079123
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-13T10:25:41Z",
+        "google_maps_url": "http://maps.google.com/?cid=3501571599666691953",
+        "location": {
+          "address": "C. de Sta. Isabel, 52, Centro, 28012 Madrid, España",
+          "country_code": "ES",
+          "name": "Museo Nacional Centro de Arte Reina Sofía"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -3.7019703,
+          40.4080634
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-13T10:24:41Z",
+        "google_maps_url": "http://maps.google.com/?cid=17663462932988858430",
+        "location": {
+          "address": "C. de Tribulete, 6, Centro, 28012 Madrid, España",
+          "country_code": "ES",
+          "name": "Pum Pum Café"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-13T03:25:08Z",
+        "google_maps_url": "http://maps.google.com/?q=Faro+de+Lari%C3%B1o,+15292+Carnota,+La+Coru%C3%B1a&ftid=0xd2f2a356aba83a1:0xd0a52fb23a383512",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-06T19:14:10Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+d'Aribau,+112,+08036+Barcelona&ftid=0x12a4a28fda90163f:0x3147b8b3b7e4a8a0",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.4175729,
+          43.3704664
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-06T19:13:07Z",
+        "google_maps_url": "http://maps.google.com/?cid=52606299366906263",
+        "location": {
+          "address": "P.º de Rda., 50, 15011 A Coruña, España",
+          "country_code": "ES",
+          "name": "Alda Coruñamar"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1817456,
+          41.3972167
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-06T11:54:03Z",
+        "google_maps_url": "http://maps.google.com/?cid=12270504383321173276",
+        "location": {
+          "address": "Carrer de Sardenya, 196, Eixample, 08013 Barcelona, España",
+          "country_code": "ES",
+          "name": "La Catrina de Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -7.6429650,
+          42.4079310
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-05T03:34:15Z",
+        "google_maps_url": "http://maps.google.com/?cid=15873955362573600233",
+        "location": {
+          "address": "32164 Luintra, Province of Ourense, España",
+          "country_code": "ES",
+          "name": "Portos do Sil S.L."
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-05T03:34:11Z",
+        "google_maps_url": "http://maps.google.com/?q=42.407775,-7.6425361",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-10-03T06:14:52Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+de+Montserrat,+95,+08221+Terrassa,+Barcelona&ftid=0x12a492c0decdc935:0x3da6fab1d2bf7c4e",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1541491,
+          41.4048481
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-30T00:59:56Z",
+        "google_maps_url": "http://maps.google.com/?cid=9580783250424209808",
+        "location": {
+          "address": "Carrer del Torrent de l'Olla, 169, Gràcia, 08012 Barcelona, España",
+          "country_code": "ES",
+          "name": "Lukumás"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1706510,
+          41.3730090
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-28T23:52:39Z",
+        "google_maps_url": "http://maps.google.com/?cid=3925287403152042171",
+        "location": {
+          "address": "Carrer de Mata, 16, Sants-Montjuïc, 08004 Barcelona, España",
+          "country_code": "ES",
+          "name": "La Porca Burgers"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1790269,
+          41.3821318
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-28T23:51:50Z",
+        "google_maps_url": "http://maps.google.com/?cid=8193311074406946076",
+        "location": {
+          "address": "Carrer del Cometa, 5, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "Cometa PLA"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1684249,
+          41.3828164
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-28T23:50:54Z",
+        "google_maps_url": "http://maps.google.com/?cid=4801070353300348542",
+        "location": {
+          "address": "Carrer del Doctor Dou, 19, Ciutat Vella, 08001 Barcelona, España",
+          "country_code": "ES",
+          "name": "Dos Pebrots"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-14T09:48:43Z",
+        "google_maps_url": "http://maps.google.com/?q=Gran+Via+de+les+Corts+Catalanes,+605,+08007+Barcelona&ftid=0x12a4a2f259933fdb:0x8a08cbb7d594ea29",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          1.8099975,
+          41.2383278
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-13T17:11:51Z",
+        "google_maps_url": "http://maps.google.com/?cid=9550991936915242495",
+        "location": {
+          "address": "Carrer de Francesc Gumà, 21, 08870 Sitges, Barcelona, España",
+          "country_code": "ES",
+          "name": "Big Al's | Sitges"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          1.8082391,
+          41.2371939
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-13T16:44:42Z",
+        "google_maps_url": "http://maps.google.com/?cid=6162706385039522682",
+        "location": {
+          "address": "Carrer de Sant Gaudenci, 9, 08870 Sitges, Barcelona, España",
+          "country_code": "ES",
+          "name": "El Santo"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1507982,
+          41.4017779
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-08T17:39:15Z",
+        "google_maps_url": "http://maps.google.com/?cid=3308438330522909163",
+        "location": {
+          "address": "Avinguda de la Riera de Cassoles, 9, Sarrià-Sant Gervasi, 08012 Barcelona, España",
+          "country_code": "ES",
+          "name": "El Gran Sr J"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1576739,
+          41.3911538
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-03T16:17:11Z",
+        "google_maps_url": "http://maps.google.com/?cid=8374912566677461832",
+        "location": {
+          "address": "Carrer d'Enric Granados, 69, Eixample, 08008 Barcelona, España",
+          "country_code": "ES",
+          "name": "La Polpa"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1626264,
+          41.3823469
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-03T15:27:00Z",
+        "google_maps_url": "http://maps.google.com/?cid=4199551751855013238",
+        "location": {
+          "address": "Carrer de Casanova, 11, Eixample, 08011 Barcelona, España",
+          "country_code": "ES",
+          "name": "Futon Espai (showroom & outlet)"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1615037,
+          41.3882802
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-03T14:43:02Z",
+        "google_maps_url": "http://maps.google.com/?cid=8096279581336576763",
+        "location": {
+          "address": "Carrer d'Enric Granados, 19, Eixample, 08007 Barcelona, España",
+          "country_code": "ES",
+          "name": "Brunch & Cake"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2055197,
+          41.3998339
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-02T19:38:31Z",
+        "google_maps_url": "http://maps.google.com/?cid=2436258747473265806",
+        "location": {
+          "address": "Carrer de Marià Aguiló, 131, L'Amistat, 12, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "La Pubilla del Taulat"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-09-01T18:26:47Z",
+        "google_maps_url": "http://maps.google.com/?q=41.385857,2.160638",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.4012209,
+          48.8519636
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-31T20:51:19Z",
+        "google_maps_url": "http://maps.google.com/?cid=4581428247275676013",
+        "location": {
+          "address": "75020 París, Francia",
+          "country_code": "FR",
+          "name": "Buzenval"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -3.7140994,
+          40.4238758
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-26T11:25:24Z",
+        "google_maps_url": "http://maps.google.com/?cid=7656574518715989664",
+        "location": {
+          "address": "C. de Juan Álvarez Mendizábal, 7, Moncloa - Aravaca, 28008 Madrid, España",
+          "country_code": "ES",
+          "name": "La Charca Taberna"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -0.4848086,
+          38.3475811
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-26T07:19:36Z",
+        "google_maps_url": "http://maps.google.com/?cid=1706193240437116644",
+        "location": {
+          "address": "Rbla. de Méndez Núñez, 45, 03002 Alicante, España",
+          "country_code": "ES",
+          "name": "La Tía Juana Alicante"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -0.4304124,
+          38.3664078
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-26T07:19:15Z",
+        "google_maps_url": "http://maps.google.com/?cid=7038424661394298000",
+        "location": {
+          "address": "C.C. Torre Golf, Av. Historiador Vicente Ramos, 6, 03540 Alicante, España",
+          "country_code": "ES",
+          "name": "Manhattan Burger"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1406710,
+          41.3683310
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-25T13:22:30Z",
+        "google_maps_url": "http://maps.google.com/?cid=17633447111298796701",
+        "location": {
+          "address": "Gran Via de les Corts Catalanes, 192 bis, Sants-Montjuïc, 08004 Barcelona, España",
+          "country_code": "ES",
+          "name": "Bonpreu"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-25T13:19:40Z",
+        "google_maps_url": "http://maps.google.com/?q=41.368894,2.14142",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1956646,
+          41.4020948
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-24T05:03:51Z",
+        "google_maps_url": "http://maps.google.com/?cid=6241006524673987475",
+        "location": {
+          "address": "Carrer de Roc Boronat, 102, Sant Martí, 08018 Barcelona, España",
+          "name": "Súper Coffee & Food"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-23T19:13:24Z",
+        "google_maps_url": "http://maps.google.com/?q=El+Baix+Pened%C3%A8s,+Tarragona&ftid=0x12a47552ea299aa5:0x3c659d793537d720",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1599928,
+          41.3945913
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-17T21:02:45Z",
+        "google_maps_url": "http://maps.google.com/?cid=1775000155831208870",
+        "location": {
+          "address": "Passatge de la Concepció, 10, Eixample, 08008 Barcelona, España",
+          "country_code": "ES",
+          "name": "Restaurante Mordisco Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1763165,
+          41.3802908
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-13T18:47:13Z",
+        "google_maps_url": "http://maps.google.com/?cid=8484360923915786026",
+        "location": {
+          "address": "Carrer dels Escudellers Blancs, 7, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "Sugar Cocktail Bar Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1547339,
+          41.4035727
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-13T18:44:36Z",
+        "google_maps_url": "http://maps.google.com/?cid=4775233699950880662",
+        "location": {
+          "address": "Carrer d'Astúries, 38, Gràcia, 08012 Barcelona, España",
+          "country_code": "ES",
+          "name": "Olokuti | Gràcia"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1953872,
+          41.4023134
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-08-13T17:21:27Z",
+        "google_maps_url": "http://maps.google.com/?cid=8897972932725886554",
+        "location": {
+          "address": "Carrer de Roc Boronat, 114, Sant Martí, 08018 Barcelona, España",
+          "country_code": "ES",
+          "name": "Sopa Boronat"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1807479,
+          41.3881849
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-07-30T19:02:00Z",
+        "google_maps_url": "http://maps.google.com/?cid=12040800485096801525",
+        "location": {
+          "address": "Plaça de Sant Agustí Vell, 10, Ciutat Vella, 08003 Barcelona, España",
+          "country_code": "ES",
+          "name": "Enjoy Vegan"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-07-23T17:33:59Z",
+        "google_maps_url": "http://maps.google.com/?q=41.374639,2.155460",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1545260,
+          41.3785314
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-07-01T19:52:34Z",
+        "google_maps_url": "http://maps.google.com/?cid=17346013355485960719",
+        "location": {
+          "address": "Carrer de Rocafort, 70, Eixample, 08029 Barcelona, España",
+          "country_code": "ES",
+          "name": "The Fish & Chips Shop"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1517586,
+          41.3952760
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-07-01T07:25:44Z",
+        "google_maps_url": "http://maps.google.com/?cid=9550391602843015710",
+        "location": {
+          "address": "Carrer de Moià, 8, Sarrià-Sant Gervasi, 08006 Barcelona, España",
+          "country_code": "ES",
+          "name": "Institut français en Barcelona - Cursos de francés"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1930688,
+          41.3944742
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-06-29T14:42:21Z",
+        "google_maps_url": "http://maps.google.com/?cid=17716272639533992939",
+        "location": {
+          "address": "Carrer de Llull, 63, Sant Martí, 08005 Barcelona, España",
+          "name": "POBLENOU"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1510780,
+          41.3884644
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-06-27T22:03:44Z",
+        "google_maps_url": "http://maps.google.com/?cid=14061076390614765032",
+        "location": {
+          "address": "Carrer del Rosselló, 112, Eixample, 08036 Barcelona, España",
+          "country_code": "ES",
+          "name": "Suca'l Rosselló"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1773014,
+          41.3832060
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-06-27T21:57:42Z",
+        "google_maps_url": "http://maps.google.com/?cid=14466403346036415920",
+        "location": {
+          "address": "Carrer de la Llibreteria, 7, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "Gelaaati DI MARCO."
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1422370,
+          41.3944499
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-06-27T21:48:00Z",
+        "google_maps_url": "http://maps.google.com/?cid=5752059244657669168",
+        "location": {
+          "address": "Carrer del Tenor Viñas, 4, Sarrià-Sant Gervasi, 08021 Barcelona, España",
+          "country_code": "ES",
+          "name": "99 Sushi Bar BCN"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-06-11T08:09:14Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+de+la+Ciutat,+7,+08002+Barcelona&ftid=0x12a4a2f8e9637677:0x2937733aaacb632c",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-06-09T09:06:17Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+de+Mallorca,+508,+08013+Barcelona&ftid=0x12a4a2d91339dac1:0xa98c0fc262ac64df",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1466947,
+          41.3964016
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-06-06T05:30:04Z",
+        "google_maps_url": "http://maps.google.com/?cid=6652001505276896399",
+        "location": {
+          "address": "C/ de Muntaner, 282, Sarrià-Sant Gervasi, 08021 Barcelona, España",
+          "name": "Fundació Julio Muñoz Ramonet"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1796175,
+          41.3809470
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-06-05T14:51:33Z",
+        "google_maps_url": "http://maps.google.com/?cid=686430946590341030",
+        "location": {
+          "address": "Carrer de Riudarenes, 7, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "Wittmore Hotel, an SLH Hotel"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          1.6140650,
+          41.5779740
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-05-24T06:10:05Z",
+        "google_maps_url": "http://maps.google.com/?cid=17073385626144882781",
+        "location": {
+          "address": "Carrer del Sol, 19, 08700 Igualada, Barcelona, España",
+          "country_code": "ES",
+          "name": "Somiatruites"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-05-01T10:00:17Z",
+        "google_maps_url": "http://maps.google.com/?q=41.540338,2.424439",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-05-01T09:57:14Z",
+        "google_maps_url": "http://maps.google.com/?q=41.574309,2.539936",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-05-01T09:52:05Z",
+        "google_maps_url": "http://maps.google.com/?q=41.598755,2.618680",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-05-01T09:51:39Z",
+        "google_maps_url": "http://maps.google.com/?q=41.594609,2.6034400000000004",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-05-01T09:49:39Z",
+        "google_maps_url": "http://maps.google.com/?q=41.606643,2.6429009999999997",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-05-01T09:42:34Z",
+        "google_maps_url": "http://maps.google.com/?q=41.622217,2.692272",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.9340090,
+          41.7167386
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-05-01T09:26:25Z",
+        "google_maps_url": "http://maps.google.com/?cid=5759535979611333561",
+        "location": {
+          "address": "Passeig del Mar, 6, 17320 Tossa de Mar, Girona, España",
+          "country_code": "ES",
+          "name": "Antigua parroquia de San Vicente de Tossa"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1821222,
+          41.3870784
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-04-24T10:52:10Z",
+        "google_maps_url": "http://maps.google.com/?cid=13626695574316587225",
+        "location": {
+          "address": "Carrer del Comerç, 17, Ciutat Vella, 08003 Barcelona, España",
+          "country_code": "ES",
+          "name": "La Vietnamita"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2375473,
+          41.4811870
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-04-21T17:53:59Z",
+        "google_maps_url": "http://maps.google.com/?cid=6759954662278734461",
+        "location": {
+          "address": "Carretera de Canyet, s/n, 08916 Badalona, Barcelona, España",
+          "country_code": "ES",
+          "name": "Hospital Universitario Hermanos Trias y Pujol"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1848131,
+          41.3829070
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-04-14T08:38:54Z",
+        "google_maps_url": "http://maps.google.com/?cid=16288762675199057821",
+        "location": {
+          "address": "Carrer de la Marquesa, 1, Ciutat Vella, 08003 Barcelona, España",
+          "name": "Born Bike Tours Barcelona - Enjoy Biking"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1559973,
+          41.3843063
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-04-06T05:00:02Z",
+        "google_maps_url": "http://maps.google.com/?cid=8233866618570634670",
+        "location": {
+          "address": "Carrer del Comte d'Urgell, 112, Eixample, 08011 Barcelona, España",
+          "country_code": "ES",
+          "name": "Yatai | Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1810490,
+          41.3896608
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-03-26T02:56:09Z",
+        "google_maps_url": "http://maps.google.com/?cid=5545297330366867418",
+        "location": {
+          "address": "Carrer del Portal Nou, 62, Ciutat Vella, 08003 Barcelona, España",
+          "country_code": "ES",
+          "name": "Taco Alto"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1784994,
+          41.3930450
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-03-23T23:32:01Z",
+        "google_maps_url": "http://maps.google.com/?cid=1362202729819544198",
+        "location": {
+          "address": "Pg. de St. Joan, 28, Eixample, 08010 Barcelona, España",
+          "country_code": "ES",
+          "name": "Secrets del Mediterrani"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-02-26T21:22:02Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+del+Comte+Borrell,+109,+08015+Barcelona&ftid=0x12a4a2621789e4cb:0x71fc94f523435448",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1583520,
+          41.3836180
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-02-12T12:06:16Z",
+        "google_maps_url": "http://maps.google.com/?cid=17121906333116316751",
+        "location": {
+          "address": "Carrer de la Diputació, 164, Eixample, 08011 Barcelona, España",
+          "country_code": "ES",
+          "name": "Restaurante Amaltea"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1933333,
+          41.4022222
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-02-11T06:42:25Z",
+        "google_maps_url": "http://maps.google.com/?cid=1534889981447232940",
+        "location": {
+          "address": "Carrer de la Ciutat de Granada, 130, Sant Martí, 08018 Barcelona, España",
+          "country_code": "ES",
+          "name": "Quinabarra"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1997712,
+          41.4007484
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-02-02T10:54:25Z",
+        "google_maps_url": "http://maps.google.com/?cid=16264303035923570635",
+        "location": {
+          "address": "Carrer de Pujades, 168, Sant Martí, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "Timesburg Poblenou"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1580900,
+          41.3879754
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-02-01T10:50:35Z",
+        "google_maps_url": "http://maps.google.com/?cid=11472640733967528827",
+        "location": {
+          "address": "C/ de Muntaner, 82, Eixample, 08011 Barcelona, España",
+          "country_code": "ES",
+          "name": "Indochine Ly Leap Restaurant"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1548730,
+          41.3930263
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-02-01T10:37:45Z",
+        "google_maps_url": "http://maps.google.com/?cid=8516205601483936355",
+        "location": {
+          "address": "Carrer de Còrsega, 242, Eixample, 08036 Barcelona, España",
+          "country_code": "ES",
+          "name": "Koyuki"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1802270,
+          41.3814330
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-01-30T11:54:24Z",
+        "google_maps_url": "http://maps.google.com/?cid=9205254558153363435",
+        "location": {
+          "address": "Carrer d'en Gignàs, 23, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "The Benedict Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1489350,
+          41.3799216
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-01-29T17:49:57Z",
+        "google_maps_url": "http://maps.google.com/?cid=14884483467664604441",
+        "location": {
+          "address": "Carrer d'Aragó, 8, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "Tandoor"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1628355,
+          41.3769204
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-01-28T17:53:58Z",
+        "google_maps_url": "http://maps.google.com/?cid=14269125609970007446",
+        "location": {
+          "address": "Carrer del Parlament, 39, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "Federal Cafè"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1972130,
+          41.4038736
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-01-27T19:38:32Z",
+        "google_maps_url": "http://maps.google.com/?cid=16909329278281631117",
+        "location": {
+          "address": "Rambla del Poblenou, 123, Sant Martí, 08018 Barcelona, España",
+          "country_code": "ES",
+          "name": "SiamoQua Ristorante Pizzeria"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1960895,
+          41.4018309
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-01-26T14:38:47Z",
+        "google_maps_url": "http://maps.google.com/?cid=357215080704172297",
+        "location": {
+          "address": "Carrer dels Almogàvers, 211, Sant Martí, 08018 Barcelona, España",
+          "country_code": "ES",
+          "name": "Cata de Catacroquet"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2016-01-06T20:08:32Z",
+        "google_maps_url": "http://maps.google.com/?q=42.225156,-8.736283",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1401890,
+          41.3926680
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-12-06T07:53:16Z",
+        "google_maps_url": "http://maps.google.com/?cid=7800224942219410059",
+        "location": {
+          "country_code": "ES",
+          "name": "Masala Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2038355,
+          41.4043906
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-12-06T07:52:12Z",
+        "google_maps_url": "http://maps.google.com/?cid=6772406451675082340",
+        "location": {
+          "address": "Carrer de Lope de Vega, 94, Sant Martí, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "Cal Mingo Flequers I Pastissers"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2022237,
+          41.4019630
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-12-06T07:47:13Z",
+        "google_maps_url": "http://maps.google.com/?cid=2538474334004243693",
+        "location": {
+          "address": "Carrer de Marià Aguiló, 61, Sant Martí, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "Nabibi Vital Cooking"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1638094,
+          41.3951072
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-12-05T09:44:11Z",
+        "google_maps_url": "http://maps.google.com/?cid=15230138431922701722",
+        "location": {
+          "address": "Carrer de Mallorca, 277, Eixample, 08034 Barcelona, España",
+          "country_code": "ES",
+          "name": "Nata's Cafe Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.0805034,
+          41.4693591
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-12-05T07:21:48Z",
+        "google_maps_url": "http://maps.google.com/?cid=7161857563498291074",
+        "location": {
+          "address": "Carrer de Sant Antoni, 56, 08172 Sant Cugat del Vallès, Barcelona, España",
+          "country_code": "ES",
+          "name": "Somewhere Cafè"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2001584,
+          41.4027873
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-11-26T10:32:13Z",
+        "google_maps_url": "http://maps.google.com/?cid=7266326829356561013",
+        "location": {
+          "address": "Carrer de Pallars, 232, Sant Martí, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "Ca la merce"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1638313,
+          41.3775805
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-11-15T17:14:52Z",
+        "google_maps_url": "http://maps.google.com/?cid=9177538171568653000",
+        "location": {
+          "address": "Carrer del Parlament, 53, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "El Sortidors del Parlament"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1824190,
+          41.3985528
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-11-04T12:55:30Z",
+        "google_maps_url": "http://maps.google.com/?cid=337270589038599828",
+        "location": {
+          "address": "Carrer de la Marina, 164, Eixample, 08013 Barcelona, España",
+          "country_code": "ES",
+          "name": "Giulietta Cafè | Pastelería, Restaurante y Catering"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1509571,
+          41.3924942
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-09-30T18:03:36Z",
+        "google_maps_url": "http://maps.google.com/?cid=2235814795231109325",
+        "location": {
+          "address": "C/ de Muntaner, 177, Eixample, 08036 Barcelona, España",
+          "country_code": "ES",
+          "name": "OBBIO - Supermercat Ecològic"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1570436,
+          41.3894914
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-09-29T13:14:06Z",
+        "google_maps_url": "http://maps.google.com/?cid=7405890896843079439",
+        "location": {
+          "address": "Carrer de Mallorca, 188, Eixample, 08036 Barcelona, España",
+          "country_code": "ES",
+          "name": "Ukai Eixample"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1844244,
+          41.3863831
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-09-24T17:58:59Z",
+        "google_maps_url": "http://maps.google.com/?cid=2883530729749794758",
+        "location": {
+          "address": "Passeig de Picasso, 32, Ciutat Vella, 08003 Barcelona, España",
+          "country_code": "ES",
+          "name": "Ikibana Born | Restaurante japonés"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1623586,
+          41.3764770
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-09-24T17:58:41Z",
+        "google_maps_url": "http://maps.google.com/?cid=9828726870730724637",
+        "location": {
+          "address": "Carrer del Parlament, 25, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "Bar Calders"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1651338,
+          41.3673533
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-08-25T03:35:39Z",
+        "google_maps_url": "http://maps.google.com/?cid=1081139755368922224",
+        "location": {
+          "address": "Avinguda Miramar, 30, Sants-Montjuïc, 08038 Barcelona, España",
+          "name": "Jardines de Mossèn Cinto Verdaguer"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1440705,
+          41.3736560
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-08-13T11:36:57Z",
+        "google_maps_url": "http://maps.google.com/?cid=9946704172322368849",
+        "location": {
+          "address": "Carrer d'Hostafrancs, 11, Sants-Montjuïc, 08014 Barcelona, España",
+          "country_code": "ES",
+          "name": "Santa Ceviche"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1583500,
+          41.3751893
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-31T20:29:57Z",
+        "google_maps_url": "http://maps.google.com/?cid=13777288014489317695",
+        "location": {
+          "address": "Avinguda del Paral·lel, 148, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "Ikibana Paral·lel"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2023249,
+          41.4004478
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-30T14:31:18Z",
+        "google_maps_url": "http://maps.google.com/?cid=5421581082370252118",
+        "location": {
+          "address": "Rambla del Poblenou, 58, Sant Martí, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "El 58"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1539460,
+          41.3808150
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-30T14:31:08Z",
+        "google_maps_url": "http://maps.google.com/?cid=6827540610695969647",
+        "location": {
+          "address": "Carrer de Calàbria, 118, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "\"El Bar\" Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1358707,
+          41.3767198
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-30T14:30:33Z",
+        "google_maps_url": "http://maps.google.com/?cid=9320602868671296037",
+        "location": {
+          "address": "Carrer de Galileu, 30, Sants-Montjuïc, 08028 Barcelona, España",
+          "country_code": "ES",
+          "name": "LA GUINGUETA del Pan&Oli"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1770391,
+          41.3889218
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-22T14:23:59Z",
+        "google_maps_url": "http://maps.google.com/?cid=12439994604101508885",
+        "location": {
+          "address": "Passatge Sert, 12, Ciutat Vella, 08003 Barcelona, España",
+          "country_code": "ES",
+          "name": "Nomad Coffee Bar"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2085829,
+          41.4056170
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-21T18:22:38Z",
+        "google_maps_url": "http://maps.google.com/?cid=15611705982275623090",
+        "location": {
+          "address": "Carrer de Fluvià, 47, Sant Martí, 08019 Barcelona, España",
+          "country_code": "ES",
+          "name": "Tarannà Café"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1639782,
+          41.3773702
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-21T18:21:17Z",
+        "google_maps_url": "http://maps.google.com/?cid=4037752097657511845",
+        "location": {
+          "address": "Carrer del Parlament, 56, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "Horchatería Sirvent Parlament 56"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-20T18:25:15Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+dels+Agullers,+8,+08003+Barcelona&ftid=0x12a4a2ff08c0785f:0x3c597425c5f6f63b",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1654308,
+          41.3819289
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-20T18:22:54Z",
+        "google_maps_url": "http://maps.google.com/?cid=765605578853304490",
+        "location": {
+          "address": "Carrer de Ferlandina, 24, Local 1, Ciutat Vella, 08001 Barcelona, España",
+          "country_code": "ES",
+          "name": "Bar Fidel"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1774741,
+          41.3813879
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-20T18:21:57Z",
+        "google_maps_url": "http://maps.google.com/?cid=3517574221555213455",
+        "location": {
+          "address": "Carrer de Cervantes, 7, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "Bar Restaurant Cervantes"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1880701,
+          41.4077221
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-14T07:13:55Z",
+        "google_maps_url": "http://maps.google.com/?cid=8857561459838986360",
+        "location": {
+          "address": "Carrer del Clot, 49, Sant Martí, 08018 Barcelona, España",
+          "country_code": "ES",
+          "name": "La Clote de Clot"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1619416,
+          41.3879027
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-11T14:46:43Z",
+        "google_maps_url": "http://maps.google.com/?cid=25112469904463023",
+        "location": {
+          "address": "Carrer d'Enric Granados, 15, Eixample, 08007 Barcelona, España",
+          "country_code": "ES",
+          "name": "delaCrem"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1551156,
+          41.3919598
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-11T14:46:09Z",
+        "google_maps_url": "http://maps.google.com/?cid=15042256947165072629",
+        "location": {
+          "address": "Carrer del Rosselló, 189, Eixample, 08036 Barcelona, España",
+          "country_code": "ES",
+          "name": "Brunch & Cake"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1626648,
+          41.3874502
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-11T14:44:05Z",
+        "google_maps_url": "http://maps.google.com/?cid=1774753913237794907",
+        "location": {
+          "address": "Carrer d'Enric Granados, 3, Eixample, 08007 Barcelona, España",
+          "name": "Café Cosmo"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1598125,
+          41.3862210
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-11T14:43:57Z",
+        "google_maps_url": "http://maps.google.com/?cid=10925576785763675937",
+        "location": {
+          "address": "C/ de Muntaner, 55, Eixample, 08011 Barcelona, España",
+          "country_code": "ES",
+          "name": "BierCaB"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1843617,
+          41.3842006
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-11T09:41:27Z",
+        "google_maps_url": "http://maps.google.com/?cid=8623046548178695929",
+        "location": {
+          "address": "Carrer del Rec, 79, Ciutat Vella, 08003 Barcelona, España",
+          "country_code": "ES",
+          "name": "Ten's Tapas Restaurant Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1663634,
+          41.4004302
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-09T11:12:15Z",
+        "google_maps_url": "http://maps.google.com/?cid=7314075886147388009",
+        "location": {
+          "address": "Carrer del Rosselló, 325, Eixample, 08037 Barcelona, España",
+          "country_code": "ES",
+          "name": "Can Kenji"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1651086,
+          41.3938330
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-01T19:20:59Z",
+        "google_maps_url": "http://maps.google.com/?cid=16929619536372945663",
+        "location": {
+          "address": "Carrer de València, 290, Eixample, 08007 Barcelona, España",
+          "country_code": "ES",
+          "name": "Tonkotsu Ramen & Asian Street Food"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1367631,
+          41.3797270
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-07-01T19:20:52Z",
+        "google_maps_url": "http://maps.google.com/?cid=5118049896595818089",
+        "location": {
+          "address": "Carrer del Vallespir, 51, Sants-Montjuïc, 08014 Barcelona, España",
+          "country_code": "ES",
+          "name": "Santa Burg"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1681622,
+          41.3934603
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-06-30T01:54:40Z",
+        "google_maps_url": "http://maps.google.com/?cid=400469300876812036",
+        "location": {
+          "address": "Carrer de Roger de Llúria, 53, Eixample, 08009 Barcelona, España",
+          "country_code": "ES",
+          "name": "Warhammer"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1647157,
+          41.3836130
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-06-29T21:48:35Z",
+        "google_maps_url": "http://maps.google.com/?cid=6622433358444229694",
+        "location": {
+          "address": "Carrer de Joaquín Costa, 62, Ciutat Vella, 08001 Barcelona, España",
+          "country_code": "ES",
+          "name": "Fantastik | Bazar de regalos originales y fantásticos"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1650693,
+          41.3682618
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-06-26T11:19:43Z",
+        "google_maps_url": "http://maps.google.com/?cid=966367014472487617",
+        "location": {
+          "address": "Plaça de Dante, 9999, Sants-Montjuïc, 08038 Barcelona, España",
+          "country_code": "ES",
+          "name": "Jardines de Joan Brossa"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2083261,
+          41.4055354
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-06-13T19:58:13Z",
+        "google_maps_url": "http://maps.google.com/?cid=13908002580426797044",
+        "location": {
+          "address": "Carrer de Llull, 302, Sant Martí, 08019 Barcelona, España",
+          "country_code": "ES",
+          "name": "M&M Gourmet"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          1.4445744,
+          41.1573242
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-05-26T06:51:25Z",
+        "google_maps_url": "http://maps.google.com/?cid=15073313994111505424",
+        "location": {
+          "address": "43839 Torredembarra, Tarragona, España",
+          "name": "Platja de Torredembarra i Creixell"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1513917,
+          41.3851167
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-05-17T17:07:26Z",
+        "google_maps_url": "http://maps.google.com/?cid=4942276050083399154",
+        "location": {
+          "address": "Carrer de Mallorca, 90, Eixample, 08029 Barcelona, España",
+          "country_code": "ES",
+          "name": "Yoshino"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1984355,
+          41.3983549
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-05-08T19:16:43Z",
+        "google_maps_url": "http://maps.google.com/?cid=9008763229584730128",
+        "location": {
+          "address": "Carrer de la Ciutat de Granada, 44, Sant Martí, 08005 Barcelona, España",
+          "country_code": "ES",
+          "name": "Can Dende"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1612710,
+          41.3910130
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-05-07T19:03:22Z",
+        "google_maps_url": "http://maps.google.com/?cid=4566380802872615451",
+        "location": {
+          "address": "Carrer de València, 246, Eixample, 08007 Barcelona, España",
+          "country_code": "ES",
+          "name": "Crustó València"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.7119346,
+          42.2374254
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-03-19T18:22:26Z",
+        "google_maps_url": "http://maps.google.com/?cid=7444981381767226627",
+        "location": {
+          "address": "R. de García Barbón, 103, bajo, Santiago de Vigo, 36201 Vigo, Pontevedra, España",
+          "country_code": "ES",
+          "name": "The Coffee Land"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.5441100,
+          42.8751659
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-03-06T08:40:15Z",
+        "google_maps_url": "http://maps.google.com/?cid=13427880314679220942",
+        "location": {
+          "address": "Rúa do Hórreo, 27, 15702 Santiago de Compostela, A Coruña, España",
+          "country_code": "ES",
+          "name": "Café Venecia"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1439261,
+          41.3899294
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-02-16T01:21:07Z",
+        "google_maps_url": "http://maps.google.com/?cid=14101347671454702404",
+        "location": {
+          "address": "Carrer de Viladomat, 324, Eixample, 08029 Barcelona, España",
+          "country_code": "ES",
+          "name": "Les Truites"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1553699,
+          41.5582044
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-02-15T22:33:35Z",
+        "google_maps_url": "http://maps.google.com/?cid=519141580883421959",
+        "location": {
+          "address": "Carrer de l'Onze de Setembre, 15, 2Ext, 08213 Polinyà, Barcelona, España",
+          "country_code": "ES",
+          "name": "Can Coll"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-01-30T12:27:30Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer+de+Sant+Bartomeu,+6,+08001+Barcelona&ftid=0x12a4a25ed7247757:0x13d576b6e3fbb78b",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1375605,
+          41.3784779
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2015-01-27T05:46:38Z",
+        "google_maps_url": "http://maps.google.com/?cid=16847189097863001741",
+        "location": {
+          "address": "Carrer del Vallespir, 19, Sants-Montjuïc, 08014 Barcelona, España",
+          "country_code": "ES",
+          "name": "Maido"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1722093,
+          41.3938668
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-12-31T15:09:10Z",
+        "google_maps_url": "http://maps.google.com/?cid=3423938611969234252",
+        "location": {
+          "address": "Carrer de Girona, 57, Eixample, 08009 Barcelona, España",
+          "country_code": "ES",
+          "name": "Mayura Restaurante Indio"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1683914,
+          41.3905830
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-11-25T12:08:50Z",
+        "google_maps_url": "http://maps.google.com/?cid=787139403907623797",
+        "location": {
+          "address": "Pg. de Gràcia, 24 Bis, Eixample, 08007 Barcelona, España",
+          "country_code": "ES",
+          "name": "El Nacional Barcelona"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1566060,
+          41.3818099
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-11-15T07:17:55Z",
+        "google_maps_url": "http://maps.google.com/?cid=17403923854580600091",
+        "location": {
+          "address": "Carrer del Comte Borrell, 145, Eixample, 08015 Barcelona, España",
+          "country_code": "ES",
+          "name": "Restaurante japonés Mikasa"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1783208,
+          41.3924846
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-11-15T07:13:12Z",
+        "google_maps_url": "http://maps.google.com/?cid=15972184847327889287",
+        "location": {
+          "address": "Pg. de St. Joan, 11, Eixample, 08010 Barcelona, España",
+          "country_code": "ES",
+          "name": "Kaburi"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1713057,
+          41.4304886
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-11-15T07:12:38Z",
+        "google_maps_url": "http://maps.google.com/?cid=7466984844739965468",
+        "location": {
+          "address": "Pg. de Fabra i Puig, 296, Nou Barris, 08031 Barcelona, España",
+          "country_code": "ES",
+          "name": "La Esquinica"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1564758,
+          41.4028476
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-11-15T07:11:51Z",
+        "google_maps_url": "http://maps.google.com/?cid=18377821306321386209",
+        "location": {
+          "address": "Carrer del Torrent de l'Olla, 138, Gràcia, 08012 Barcelona, España",
+          "country_code": "ES",
+          "name": "VegetArt Cuina Vegana TAKE AWAY"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1633700,
+          41.3962700
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-11-14T06:58:16Z",
+        "google_maps_url": "http://maps.google.com/?cid=13352269621565340151",
+        "location": {
+          "address": "Carrer de Provença, 279, Eixample, 08037 Barcelona, España",
+          "country_code": "ES",
+          "name": "Hotel Praktik Bakery"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1615249,
+          41.3863745
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-11-04T13:52:05Z",
+        "google_maps_url": "http://maps.google.com/?cid=8337162262919188850",
+        "location": {
+          "address": "Carrer de la Diputació, 207, Eixample, 08011 Barcelona, España",
+          "country_code": "ES",
+          "name": "Bienmesabe"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.2495910,
+          41.4482250
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-24T14:36:44Z",
+        "google_maps_url": "http://maps.google.com/?cid=17541083769122752405",
+        "location": {
+          "address": "Carrer de Sant Pere, 6, 08911 Badalona, Barcelona, España",
+          "country_code": "ES",
+          "name": "Butifarring"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1321503,
+          41.3785963
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-23T19:25:50Z",
+        "google_maps_url": "http://maps.google.com/?cid=11582512600898479696",
+        "location": {
+          "address": "Carrer de Melcior de Palau, 32, 36, Sants-Montjuïc, 08028 Barcelona, España",
+          "country_code": "ES",
+          "name": "Hivernacle"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1680273,
+          41.3851402
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-22T12:10:05Z",
+        "google_maps_url": "http://maps.google.com/?cid=2163100418920542359",
+        "location": {
+          "address": "Carrer de Jovellanos, 2, Ciutat Vella, 08001 Barcelona, España",
+          "country_code": "ES",
+          "name": "Teresa Carles"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-20T17:50:38Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer de l'Arc de Sant Ramon del Call, 11, 08002 Barcelona&ftid=0x12a4a2f8307db9f1:0xd2f21c169d770746",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1474992,
+          41.3895812
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-18T12:57:30Z",
+        "google_maps_url": "http://maps.google.com/?cid=7571032721762097332",
+        "location": {
+          "address": "Carrer de París, 109, Eixample, 08029 Barcelona, España",
+          "country_code": "ES",
+          "name": "Vitali Pizza"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1673496,
+          41.3719548
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-14T18:06:42Z",
+        "google_maps_url": "http://maps.google.com/?cid=12609428940486058457",
+        "location": {
+          "address": "Passeig de Montjuïc, 74, Sants-Montjuïc, 08004 Barcelona, España",
+          "country_code": "ES",
+          "name": "Bar Seco"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1781331,
+          41.3811968
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-14T18:06:30Z",
+        "google_maps_url": "http://maps.google.com/?cid=7268740909828118503",
+        "location": {
+          "address": "Carrer del Palau, 5, Ciutat Vella, 08002 Barcelona, España",
+          "country_code": "ES",
+          "name": "Rasoterra"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-13T19:38:23Z",
+        "google_maps_url": "http://maps.google.com/?q=41.553979999999996,2.249668",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-10-02T19:40:37Z",
+        "google_maps_url": "http://maps.google.com/?q=Calle Fusina, 5, 08003 Barcelona&ftid=0x12a4a2fdc27eae2d:0x1c0aa87b4a7e676f",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1489887,
+          41.3936023
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-09-30T22:10:29Z",
+        "google_maps_url": "http://maps.google.com/?cid=5498835109430144866",
+        "location": {
+          "address": "Av. Diagonal, 449, Eixample, 08036 Barcelona, España",
+          "country_code": "ES",
+          "name": "FEELD ORGANIC"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-04-20T11:08:15Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer de les Torres, 2, 08042 Barcelona&ftid=0x12a4bd1c7446813d:0xbc7d1452c37edcbf",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2014-04-04T10:46:14Z",
+        "google_maps_url": "http://maps.google.com/?q=Avinguda de Francesc de Marimon, 08292 Esparreguera, Barcelona, España&ftid=0x12a48bb3a9959aed:0x83050abd420ecfb2",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-05-17T15:20:01Z",
+        "google_maps_url": "http://maps.google.com/?q=Carrer Carreras i Candi, 32, 08028 Barcelona&ftid=0x12a4988ce0bf0fdf:0xf553f74abdf1b41b",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1711943,
+          41.4018860
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-05-17T12:39:50Z",
+        "google_maps_url": "http://maps.google.com/?cid=9132326959041640258",
+        "location": {
+          "address": "Carrer de Provença, 408, Eixample, 08025 Barcelona, España",
+          "country_code": "ES",
+          "name": "Club Metropolitan Sagrada Familia"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          2.1800390,
+          41.3865099
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-05-16T21:58:07Z",
+        "google_maps_url": "http://maps.google.com/?cid=13465663878178552368",
+        "location": {
+          "address": "Plaça de Sant Cugat, 1, Ciutat Vella, 08003 Barcelona, España",
+          "country_code": "ES",
+          "name": "Alsur Café El Born"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-04-12T22:32:54Z",
+        "google_maps_url": "http://maps.google.com/?q=Marqu%C3%A9s+de+Barber%C3%A1+25&ftid=0x12a4a259aab94395:0x7d59eaadc0cb27af",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-02-14T09:06:12Z",
+        "google_maps_url": "http://maps.google.com/?q=Autov%C3%ADa+a-2,+km+585,+martorell&ftid=0xd4228cec2b5d5b3:0x8d1a1750c1faef43",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-01-17T23:43:31Z",
+        "google_maps_url": "http://maps.google.com/?q=41.384613706,2.17061952",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2013-01-05T10:50:14Z",
+        "google_maps_url": "http://maps.google.com/?q=41.384217,2.172575",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2012-12-03T19:47:47Z",
+        "google_maps_url": "http://maps.google.com/?q=41.380269,2.177311",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2012-08-31T10:35:45Z",
+        "google_maps_url": "http://maps.google.com/?q=Gran+V%C3%ADa+de+las+Cortes+Catalanas,+828,+Barcelona&ftid=0x12a4a320083b4c27:0x2c9faf53285c95f9",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2012-07-08T15:11:41Z",
+        "google_maps_url": "http://maps.google.com/?q=CORSEGA+546&ftid=0x12a4a2c496b548d5:0xffd9ade4499c3f61",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2011-11-24T12:18:54Z",
+        "google_maps_url": "http://maps.google.com/?q=79, old church limehouse",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -0.0761288,
+          51.5193763
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2011-11-21T00:39:31Z",
+        "google_maps_url": "http://maps.google.com/?cid=2406544328166443425",
+        "location": {
+          "address": "1 Market St, London E1 6AJ, Reino Unido",
+          "country_code": "GB",
+          "name": "Spitalfields Arts Market"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -0.1400246,
+          51.4924635
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2011-11-14T16:09:37Z",
+        "google_maps_url": "http://maps.google.com/?cid=6296083681143217121",
+        "location": {
+          "address": "82 Wilton Rd, Pimlico, London SW1V 1DL, Reino Unido",
+          "country_code": "GB",
+          "name": "About Thyme Restaurant"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2011-10-10T16:52:47Z",
+        "google_maps_url": "http://maps.google.com/?q=51.46941,-0.1011704",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2011-09-08T21:48:36Z",
+        "google_maps_url": "http://maps.google.com/?q=e10db",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -8.6611274,
+          42.0409614
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2011-09-08T21:47:09Z",
+        "google_maps_url": "http://maps.google.com/?cid=1058396440785569198",
+        "location": {
+          "address": "Parque Empresarial Area, salida 30, Autovía, AP9/A55, 36700 Tui, Pontevedra, España",
+          "country_code": "ES",
+          "name": "OUTLETUI"
+        }
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2011-02-02T08:16:11Z",
+        "google_maps_url": "http://maps.google.com/?q=51.511909,-0.185426",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          0,
+          0
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2011-01-27T07:58:21Z",
+        "google_maps_url": "http://maps.google.com/?q=51.514668,-0.182432",
+        "Comment": "No hay información de ubicación disponible para este sitio guardado"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -0.1324140,
+          51.5220522
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "date": "2010-07-26T23:34:12Z",
+        "google_maps_url": "http://maps.google.com/?cid=3439892763966798843",
+        "location": {
+          "address": "75 Gower St, London WC1E 6HJ, Reino Unido",
+          "country_code": "GB",
+          "name": "Hotel Cavendish | Crown Group of Hotels | Gower Street London | Hotels Near UCL, UCLH, Euston Square & Goodge Street"
+        }
+      },
+      "type": "Feature"
+    }
+  ]
+}
