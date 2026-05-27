@@ -85,6 +85,14 @@ body>*{position:relative;z-index:1}
   pointer-events:none;
 }
 
+.logo-wrap{
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:22px;position:relative;z-index:1;
+}
+.logo-svg{
+  width:72px;height:72px;flex-shrink:0;
+  filter:drop-shadow(0 6px 20px rgba(0,0,0,.45)) drop-shadow(0 2px 4px rgba(0,0,0,.3));
+}
 .site-header h1{
   font-family:'Fraunces',serif;
   font-size:clamp(3rem,7vw,5.5rem);
@@ -92,8 +100,6 @@ body>*{position:relative;z-index:1}
   color:#fff;
   letter-spacing:-.03em;
   line-height:.95;
-  position:relative;z-index:1;
-  /* Subtle text shadow for depth */
   text-shadow:0 2px 40px rgba(0,0,0,.4);
 }
 .site-header h1 em{
@@ -233,7 +239,7 @@ body>*{position:relative;z-index:1}
   display:flex;align-items:center;gap:10px;flex-wrap:wrap;
 }
 .search-wrap{
-  position:relative;flex:1;min-width:200px;max-width:320px;
+  position:relative;flex:1;min-width:200px;max-width:380px;
 }
 .search-wrap svg{
   position:absolute;left:12px;top:50%;transform:translateY(-50%);
@@ -255,30 +261,6 @@ body>*{position:relative;z-index:1}
 #search:focus{
   border-color:var(--c-primary);
   box-shadow:0 0 0 3px rgba(191,78,26,.1);
-}
-.chips{
-  display:flex;gap:5px;flex-wrap:wrap;align-items:center;flex:1;
-}
-.chip{
-  background:#fff;
-  border:1.5px solid rgba(28,17,8,.1);
-  color:var(--muted);
-  font-size:.76rem;font-weight:600;
-  padding:5px 13px;border-radius:20px;cursor:pointer;
-  transition:all .15s ease;white-space:nowrap;
-  font-family:'DM Sans',sans-serif;
-  box-shadow:0 1px 2px rgba(28,17,8,.04);
-}
-.chip:hover{
-  border-color:var(--c-primary);
-  color:var(--c-primary);
-  background:rgba(191,78,26,.04);
-}
-.chip.active{
-  background:var(--c-chip-active);
-  border-color:var(--c-chip-active);
-  color:#fff;
-  box-shadow:0 2px 8px rgba(191,78,26,.3);
 }
 .result-count{
   margin-left:auto;white-space:nowrap;
@@ -375,7 +357,7 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   transition:box-shadow .3s ease,transform .3s ease,border-color .2s;
 }
 .card:hover{
-  box-shadow:var(--shadow-hover);
+  box-shadow:var(--shadow-hover), inset 3px 0 0 0 var(--c-primary);
   transform:translateY(-4px);
   border-color:rgba(191,78,26,.2);
 }
@@ -384,17 +366,6 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   from{opacity:0;transform:translateY(18px) scale(.99)}
   to{opacity:1;transform:translateY(0) scale(1)}
 }
-
-/* Left border accent instead of top bar — more editorial */
-.card::before{
-  content:'';
-  position:absolute;top:0;left:0;bottom:0;
-  width:3px;
-  background:linear-gradient(180deg,var(--c-primary) 0%,var(--c-secondary) 100%);
-  opacity:0;
-  transition:opacity .25s;
-}
-.card:hover::before{opacity:1}
 
 /* Top accent strip */
 .card-accent{
@@ -478,6 +449,17 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   width:4px;height:4px;border-radius:50%;flex-shrink:0;
   background:var(--c-card-accent);opacity:.5;
   margin-top:2px;
+}
+
+.que-pedir--empty{
+  opacity:.55;
+  background:rgba(28,17,8,.03);
+  border-color:rgba(28,17,8,.07);
+}
+.que-pedir--empty .que-pedir-label{opacity:.6}
+.que-pedir-empty-text{
+  font-size:.78rem;color:var(--muted);
+  font-style:italic;letter-spacing:.01em;
 }
 
 /* Loading dots */
@@ -658,19 +640,6 @@ footer{
 footer a{color:var(--c-primary);text-decoration:none}
 footer a:hover{text-decoration:underline}
 
-/* ─── STAGGER ANIMATION (aplicado por JS) ───────────────── */
-/*
-  En el JS, añade este snippet dentro de renderGrid():
-  después de grid.innerHTML = list.map(...).join('');
-
-  grid.querySelectorAll('.card').forEach((card, i) => {
-    card.style.animationDelay = Math.min(i * 0.045, 0.8) + 's';
-  });
-*/
-.card[style*="animation-delay"]{
-  /* ya viene del HTML inline, bien */
-}
-
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media(max-width:768px){
   .site-header{padding:48px 20px 0}
@@ -680,6 +649,8 @@ footer a:hover{text-decoration:underline}
   .city-stat{padding:10px 14px;min-width:68px}
   .city-stat-num{font-size:1.6rem}
   .controls{padding:8px 16px}
+  .controls-inner{flex-wrap:wrap;gap:8px}
+  .search-wrap{max-width:100%;min-width:100%;order:-1}
   main{padding:0 16px 80px}
   .section-nav{padding:16px 16px 0}
   .city-tab{padding:9px 14px;font-size:.8rem}
@@ -691,6 +662,8 @@ footer a:hover{text-decoration:underline}
 
 @media(max-width:480px){
   .site-header h1{font-size:2.6rem}
+  .logo-svg{width:52px;height:52px}
+  .logo-wrap{gap:14px}
   .card-name{font-size:1rem}
   .section-header h2{font-size:1.3rem}
 }
@@ -701,7 +674,25 @@ footer a:hover{text-decoration:underline}
 
 <!-- SITE HEADER -->
 <header class="site-header">
-  <h1>Tengo <em>Hambre</em></h1>
+  <div class="logo-wrap">
+    <svg class="logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- outer crispy ring -->
+      <circle cx="32" cy="32" r="30" fill="#6B3208"/>
+      <!-- browned edge -->
+      <circle cx="32" cy="32" r="26" fill="#B8680E"/>
+      <!-- cooked egg surface -->
+      <circle cx="32" cy="32" r="22.5" fill="#D98A1C"/>
+      <!-- inner warm gold -->
+      <circle cx="32" cy="32" r="18.5" fill="#ECA030"/>
+      <!-- highlight -->
+      <ellipse cx="24" cy="24" rx="9" ry="5.5" fill="#F5C254" opacity="0.5"/>
+      <!-- potato slices -->
+      <ellipse cx="26" cy="35" rx="5.5" ry="3" fill="#9E5A0A" opacity="0.38" transform="rotate(-18 26 35)"/>
+      <ellipse cx="38" cy="27" rx="4.5" ry="2.8" fill="#9E5A0A" opacity="0.32" transform="rotate(22 38 27)"/>
+      <ellipse cx="34" cy="39" rx="4" ry="2.4" fill="#9E5A0A" opacity="0.3" transform="rotate(-6 34 39)"/>
+    </svg>
+    <h1>Tengo <em>Hambre</em></h1>
+  </div>
   <p class="tagline">A dónde ir cuando tienes hambre</p>
 
   <nav class="city-tabs" role="tablist">
@@ -764,7 +755,6 @@ footer a:hover{text-decoration:underline}
       <input type="search" id="search" placeholder="Buscar restaurante..." autocomplete="off"
              oninput="onSearch(this.value)">
     </div>
-    <div class="chips" id="chips"></div>
     <span class="result-count" id="result-count"></span>
     <button class="kml-btn" onclick="downloadKML()" title="Descarga el KML e impórtalo en Google My Maps">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
@@ -852,7 +842,6 @@ footer a:hover{text-decoration:underline}
 /* ─── STATE ─────────────────────────────────────────────── */
 const CITY_KEY = {barcelona:'Barcelona', utrecht:'Utrecht', amsterdam:'Amsterdam'};
 let currentCity = 'barcelona';
-let currentFilter = 'all';
 let searchQuery = '';
 let PLATOS = {"Madre|Amsterdam":["Cacio e Pepe","Carbonara","Carciofi alla Romana","Tiramisu"],"Portugalia Tasca|Amsterdam":["Bacalhau à Brás","Pastéis de Nata","Arroz de Marisco","Caldo Verde"],"L'Entrecôte et les Dames|Amsterdam":["Entrecôte","Salade Maison","Pommes Frites","Sauce Béarnaise"],"Stek|Amsterdam":["Entrecôte","Côte de Boeuf","Filet Mignon","Rib Eye"],"Knijn Bowling & Restaurant|Amsterdam":["Bitterballen","Kroket","Paling Gerookt","Kaas Soufflé"],"Esh Pitabar|Amsterdam":["Pita Kebab","Falafel","Hummus","Shawarma"],"New York Pizza|Amsterdam":["Margherita Pizza","Pepperoni Pizza","New York Style Pizza","Quattro Formaggi"],"Malevo|Barcelona":["Carne a la parrilla","Asado de tira","Choripán","Empanadas"],"Tino - esto no es una pizza | Barcelona|Barcelona":["Focaccia con Tomate y Aceite","Pizza Romana","Supplí al Ragù","Tiramisu"],"Can Pollastre|Barcelona":["Pollo a la Brasa","Patatas Bravas","Escalivada","Crema Catalana"],"Bar Torpedo|Barcelona":["Croquetas de Jamón","Pulpo a la Gallega","Jamón Ibérico","Tabla de Quesos"],"Cervecería Vaso de Oro|Barcelona":["Jamón Ibérico","Croquetas de Jamón","Boquerones en Vinagre","Tabla de Quesos"],"Kawamura|Barcelona":["Sushi de Atún Rojo","Nigiri Variado","Rollos de Tempura","Sashimi Mixto"],"Auto Rosellon|Barcelona":["Escalivada","Pan con tomate","Croquetas de jamón","Secreto ibérico"],"Hideout Burger|Barcelona":["Hideout Burger","Crispy Bacon Burger","Truffle Fries","Hideout Special"],"Can Recasens|Barcelona":["Fideuà","Arroz a la Cazuela","Suquet de Peix","Calcots a la Brasa"],"Mustà Shawarma|Barcelona":["Shawarma de Pollo","Shawarma de Ternera","Falafel","Hummus"],"Makamaka Beach Burger Café|Barcelona":["Makamaka Burger","Fresh Fish Burger","Surf Burger","Sweet Potato Fries"],"La Porca Burgers|Barcelona":["La Porca Burger","Bacon Burger","Cheese Burger","Crispy Fries"],"Almalibre Açaí House Barcelona|Barcelona":["Açaí Bowl","Granola Bowl","Tropical Smoothie","Açaí Sorbet"],"Bun Bo Raval|Barcelona":["Bun Bo Hue","Bun Cha","Pho Bo","Banh Mi"],"Collage Cocktail Bar|Barcelona":["Mojito Collage","Daiquiri Clásico","Negroni","Margarita"],"Monsieur Bosc|Barcelona":["Escalivada","Botifarra amb mongetes","Fideuà","Crema Catalana"],"Buenas Migas|Barcelona":["Tostadas de Aguacate","Huevos Rotos","Café con Tostadas","Zumo Natural"],"Parking Pizza SANT JOAN|Barcelona":["Pizza Margherita","Pizza Carbonara","Pizza Quattro Formaggi","Pizza Española"],"GAME Pau Claris|Barcelona":["Hamburguesa de Wagyu","Croquetas de Jamón","Costillas BBQ","Tabla de Quesos y Embutidos"],"Arepamundi|Barcelona":["Arepa de Queso","Arepa de Carne Mechada","Arepa de Pollo Deshilachado","Tequeños"],"McDonald's|Barcelona":["Big Mac","McChicken","Patatas Fritas","McFlurry"],"Chicken Shop y Dirty Burger|Barcelona":["Pollo Frito","Dirty Burger","Patatas Bravas","Sándwich de Pollo"],"Restaurant Gokoku|Barcelona":["Ramen de cerdo","Gyoza","Tonkotsu","Edamame"],"Carrefour|Barcelona":["Pollo Asado","Paella","Croquetas de Jamón","Ensalada Mediterránea"],"Toyo - Restaurant Japonès a Gràcia|Barcelona":["Nigiri de atún rojo","Ramen de tonkotsu","Tempura de verduras","Gyoza al vapor"],"Enrique Tomás|Barcelona":["Jamón Ibérico de Bellota","Jamón Serrano Reserva","Tabla de Embutidos Ibéricos","Croquetas de Jamón"],"Chiringuito Escribà|Barcelona":["Paella de marisco","Arroz a banda","Fideuà","Espetos a la sal"],"Wittmore Hotel, an SLH Hotel|Barcelona":["Escalivada","Bacalao a la Llauna","Calamar a la Romana","Crema Catalana"],"Ukai Eixample|Barcelona":["Teppanyaki de ternera","Gambas al ajillo","Salmón a la parrilla","Arroz con marisco"],"Domino's Pizza|Barcelona":["Pizza Pepperoni","Pizza Margherita","Chicken Wings","Garlic Bread"],"El Nacional Barcelona|Barcelona":["Jamón Ibérico","Bacalao a la Llauna","Croquetas de Jamón","Pulpo a la Gallega"],"Palo Alto|Barcelona":["Arroz a banda","Paella de marisco","Fideuà","Suquet de peix"],"Rosa Negra (Vía Laietana) Bar & Restaurante Mexicano|Barcelona":["Chiles Rellenos","Mole Poblano","Carne Asada","Enchiladas Verdes"],"Tickets bar|Barcelona":["Jamón Ibérico","Croquetas de Jamón","Pulpo a la Gallega","Croquetas de Bacalao"],"Herbolario Navarro - Barcelona Carrer de València 186|Barcelona":["Ensalada de vegetales frescos","Zumo natural detox","Hamburguesa vegana","Smoothie bowl"],"Taktika Berri|Barcelona":["Pintxos de bacalao","Croquetas de jamón","Txuleta de buey","Piquillo relleno de queso"],"Horchatería El Tío Che|Barcelona":["Horchata de chufa","Ensaimada","Fartons","Coca de recapte"],"BELGIOUS|Barcelona":["Mejillones a la Belga","Papas a la Francesa","Croquetas de Queso","Filete a la Parrilla"],"La Vietnamita|Barcelona":["Phở","Bánh Mì","Gỏi Cuốn","Cơm Tấm"],"La Taguara Areperia|Barcelona":["Arepa de Queso","Arepa de Carne Mechada","Arepa de Pollo","Arepa de Atún"],"Baladi|Barcelona":["Hummus","Falafel","Kebab de cordero","Tabulé"],"Van Van VAR x BIEN Kebab|Barcelona":["Kebab de Ternera","Kebab de Pollo","Falafel","Shawarma"],"Petit Bangkok|Barcelona":["Pad Thai","Tom Yum Goong","Curry Rojo","Pollo Satay"],"Syra|Barcelona":["Pulpo a la Gallega","Croquetas de Jamón","Gambas al Ajillo","Tabla de Quesos y Embutidos"],"Yashima / Teppanyaki|Barcelona":["Hibachi Steak","Camarones al Teppanyaki","Pollo Teriyaki","Rollitos de Verdura"],"La Polpa|Barcelona":["Carne a la Sal","Carne Madurada","Secreto Ibérico","Carne de Wagyu"],"Futon Espai (showroom & outlet)|Barcelona":["Sushi de atún rojo","Nigiri variado","Rolls especiales","Sashimi surtido"],"Brunch & Cake|Barcelona":["Avocado Toast","Pancakes","Eggs Benedict","French Toast"],"The Fish & Chips Shop|Barcelona":["Fish and Chips","Calamares a la Romana","Gambas al Ajillo","Tabla de Pescaítos Fritos"],"Gelaaati DI MARCO.|Barcelona":["Gelato di Pistachio","Gelato di Stracciatella","Gelato di Nocciola","Gelato di Cioccolato"],"99 Sushi Bar BCN|Barcelona":["Nigiri de atún rojo","Rollos Philadelphia","Tempura de camarones","Sashimi variado"],"Yatai | Barcelona|Barcelona":["Ramen de cerdo","Gyoza","Donburi de ternera","Edamame"],"Indochine Ly Leap Restaurant|Barcelona":["Pho","Banh Mi","Pad Thai","Goi Cuon"],"Koyuki|Barcelona":["Sushi de atún rojo","Ramen de miso","Gyoza al vapor","Tempura de verduras"],"Nata's Cafe Barcelona|Barcelona":["Nata","Café con leche","Croissant","Tostada con tomate"],"Ca la merce|Barcelona":["Calcots a la brasa","Escalivada","Botifarra amb mongetes","Crema Catalana"],"Giulietta Cafè | Pastelería, Restaurante y Catering|Barcelona":["Croissant de Chocolate","Café con Tarta de Queso","Ensalada Mediterránea","Pasta Fresca"],"Ikibana Born | Restaurante japonés|Barcelona":["Nigiri Sushi","Maki Rolls","Tempura","Ramen"],"Bar Calders|Barcelona":["Calcots a la brasa","Escalivada","Botifarra amb mongetes","Conill amb xocolata"],"Santa Ceviche|Barcelona":["Ceviche Clásico","Ceviche Mixto","Tiradito de Salmón","Causa Limeña"],"Horchatería Sirvent Parlament 56|Barcelona":["Horchata con fartons","Café con leche","Granizado de café","Ensaimada"],"Bar Restaurant Cervantes|Barcelona":["Croquetas de Jamón","Pulpo a la Gallega","Jamón Ibérico","Patatas Bravas"],"Ten's Tapas Restaurant Barcelona|Barcelona":["Jamón Ibérico","Pulpo a la Gallega","Croquetas de Jamón","Patatas Bravas"],"Can Kenji|Barcelona":["Kaiseki","Sushi Omakase","Robata Yaki","Miso Soup"],"Tonkotsu Ramen & Asian Street Food|Barcelona":["Tonkotsu Ramen","Gyoza","Takoyaki","Pad Thai"],"Maido|Barcelona":["Nikkei Ceviche","Tiradito de Atún","Gyozas de Camarones","Arroz con Mariscos"],"Mayura Restaurante Indio|Barcelona":["Tandoori Chicken","Butter Chicken","Lamb Vindaloo","Naan Bread"],"Restaurante japonés Mikasa|Barcelona":["Nigiri Surtido","Maki Especial Mikasa","Ramen Tonkotsu","Gyoza"],"VegetArt Cuina Vegana TAKE AWAY|Barcelona":["Burger Vegana","Pizza Vegana","Pasta a la Boloñesa Vegana","Ensalada de la Casa"],"Bienmesabe|Barcelona":["Coca de recapte","Escalivada","Fideuà","Crema Catalana"],"Teresa Carles|Barcelona":["Escalivada","Albergínia farcida","Espaguetis de verdures","Crema de cacau"],"FEELD ORGANIC|Barcelona":["Ensalada Orgánica de Temporada","Smoothie Bowl de Frutas Frescas","Tabla de Quesos y Embutidos Ecológicos","Zumo Detox Verde"],"O’Sfizio fritto|Utrecht":["Arancini","Pasta alla Norma","Camarones Fritos","Croquetas Sicilianas"],"De Bee's Hive|Utrecht":["Bienenstich","Honigkuchen","Blätterteig mit Honig","Bienenstock Torte"],"Chillz|Utrecht":["Pulled Pork Burger","Crispy Chicken Sandwich","BBQ Ribs","Loaded Fries"],"The Streetfood Club Utrecht|Utrecht":["Bao Buns","Pad Thai","Spring Rolls","Satay Skewers"],"Restaurant San Siro|Utrecht":["Ossobuco","Risotto alla Milanese","Cotoletta alla Milanese","Panna Cotta"],"Trattoria Polpette|Utrecht":["Polpette al Ragù","Tagliatelle alla Bolognese","Risotto ai Funghi","Tiramisu"],"Casa Ferreira - TO GO|Utrecht":["Pastéis de Nata","Francesinha","Arroz de Marisco","Bacalhau à Brás"],"Farina - Italian Comfort Food|Utrecht":["Pasta Carbonara","Risotto ai Funghi","Osso Buco","Tiramisu"],"Ombretta Utrecht|Utrecht":["Pasta Carbonara","Risotto ai Funghi","Osso Buco","Tiramisu"],"Trattoria da Roberto Utrecht 🇮🇹|Utrecht":["Pasta Carbonara","Risotto ai Funghi","Osso Buco","Tiramisu"],"Takumi Ramen Utrecht Vredenburg|Utrecht":["Tonkotsu Ramen","Miso Ramen","Gyoza","Karaage"],"Have A Roll Utrecht|Utrecht":["California Roll","Philadelphia Roll","Dragon Roll","Spicy Tuna Roll"],"Soep-er Utrecht|Utrecht":["Soep van de dag","Tomatensoep","Champignonsoep","Uiensoep"],"SHOKUDO Japanese Food & Design|Utrecht":["Ramen","Donburi","Gyoza","Tempura"],"Wandee Thaise Massage Utrecht 💆|Utrecht":["Pad Thai","Som Tam","Massaman Curry","Green Curry"],"Juuls Hummus|Utrecht":["Hummus de garbanzos","Falafel casero","Pan pita tostado","Ensalada de tahina"],"Restaurant Sevilla|Utrecht":["Espetos","Gambas al Ajillo","Rabo de Toro","Torrijas"],"Cibari 🇲🇽|Utrecht":["Tacos al Pastor","Chiles Rellenos","Enchiladas Verdes","Ceviche"],"Coffee Leute Brauhaus|Utrecht":["Currywurst","Schnitzel","Bockwurst","Pretzel mit Käse"],"Karibu - breakfast, coffee, brunch, drinks and events|Utrecht":["Avocado Toast","Benedictine Eggs","Pancakes","Flat White"],"deKleineBaron Catering&Coffee|Utrecht":["Koffie","Broodjes","Croissants","Gebak"],"Boonzaaijer Bakery and Confectionery|Utrecht":["Stroopwafels","Appelflappen","Uitsmijters","Hollandse Nieuwe Haring"],"Vlaamsch Broodhuys Twijnstraat Utrecht|Utrecht":["Brood de masa madre","Croissants de mantequilla","Pan de centeno","Tarta de manzana holandesa"],"McDonald's|Utrecht":["Big Mac","Quarter Pounder","McChicken","Papas Fritas"],"Brandstof Lunchroom & Bedrijfscatering|Utrecht":["Broodje Kroket","Pastrami Sandwich","Bami Goreng","Nasi Kuning"],"Castillo de Haar|Utrecht":["Kasteel Biefstuk","Hollandse Poffertjes","Eendenbout","Kasteelschotel"],"Bunk Restaurant Utrecht|Utrecht":["Bunkburger","Pulled Pork Sandwich","Brisket Sandwich","Mac and Cheese"],"SONMAT 손맛 Korean Soul Food|Utrecht":["Bibimbap","Bulgogi","Kimchi Jjigae","Tteokbokki"],"STAN Utrecht|Utrecht":["Bitterballen","Kroket","Paling gerookt","Uitsmijter"]};
 let platosReady = true;
@@ -897,7 +886,6 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ─── CITY SWITCH ────────────────────────────────────────── */
 function switchCity(city) {
   currentCity = city;
-  currentFilter = 'all';
   searchQuery = '';
   document.getElementById('search').value = '';
 
@@ -942,7 +930,6 @@ function getFiltered() {
   const cityKey = CITY_KEY[currentCity];
   return RESTAURANTS.filter(r => {
     if (r.c !== cityKey) return false;
-    if (currentFilter !== 'all' && r.h !== currentFilter) return false;
     if (searchQuery) {
       const q = searchQuery.toLowerCase();
       return r.n.toLowerCase().includes(q) || r.a.toLowerCase().includes(q) || r.h.toLowerCase().includes(q);
@@ -961,9 +948,6 @@ function render() {
   // Grid
   renderGrid('grid-all', filtered);
 
-  // Chips
-  buildChips();
-
   // Re-observe
   if (observer) {
     document.querySelectorAll('.que-pedir[data-loaded="false"]').forEach(el => observer.observe(el));
@@ -977,12 +961,10 @@ function renderGrid(gridId, list) {
     return;
   }
   grid.innerHTML = list.map((r, i) => cardHTML(r, i)).join('');
-  grid.querySelectorAll('.card').forEach((card, i) => {
-    card.style.animationDelay = Math.min(i * 0.045, 0.8) + 's';
-  });
 }
 
 function cardHTML(r, i) {
+  const delay = Math.min(i * 0.045, 0.8).toFixed(3);
   const hoodHTML = r.h && r.h !== r.c
     ? `<span class="card-hood">${r.h}</span>`
     : '';
@@ -1001,7 +983,7 @@ function cardHTML(r, i) {
   const cacheKey = r.n + '|' + r.c;
   const dishSection = renderDishes(PLATOS[cacheKey]);
 
-  return `<div class="card">
+  return `<div class="card" style="animation-delay:${delay}s">
     <div class="card-accent"></div>
     <div class="card-body">
       ${hoodHTML ? `<div class="card-top">${hoodHTML}</div>` : ''}
@@ -1014,7 +996,12 @@ function cardHTML(r, i) {
 }
 
 function renderDishes(dishes) {
-  if (!dishes || !dishes.length) return '';
+  if (!dishes || !dishes.length) {
+    return `<div class="que-pedir que-pedir--empty">
+      <div class="que-pedir-label">Qué pedir</div>
+      <div class="que-pedir-empty-text">Recomendaciones próximamente</div>
+    </div>`;
+  }
   return `<div class="que-pedir">
     <div class="que-pedir-label">Qué pedir</div>
     <div class="que-pedir-dishes">
@@ -1028,24 +1015,6 @@ function escHtml(s) {
 }
 
 /* ─── CHIPS / FILTERS ────────────────────────────────────── */
-function buildChips() {
-  const container = document.getElementById('chips');
-  const ck2 = CITY_KEY[currentCity];
-  const cityRs = RESTAURANTS.filter(r => r.c === ck2);
-  const hoods = [...new Set(cityRs.map(r => r.h))].filter(h => h && h !== ck2).sort();
-
-  if (hoods.length <= 1) { container.innerHTML = ''; return; }
-
-  container.innerHTML = `<button class="chip ${currentFilter==='all'?'active':''}" onclick="setFilter('all')">Todos</button>`
-    + hoods.map(h =>
-        `<button class="chip ${currentFilter===h?'active':''}" onclick="setFilter('${escHtml(h)}')">${escHtml(h)}</button>`
-      ).join('');
-}
-
-function setFilter(hood) {
-  currentFilter = hood;
-  render();
-}
 
 /* ─── SEARCH ─────────────────────────────────────────────── */
 function onSearch(val) {
