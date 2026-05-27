@@ -110,6 +110,7 @@ body.city-amsterdam .site-header::after{
 .logo-svg{
   width:72px;height:72px;flex-shrink:0;
   filter:drop-shadow(0 6px 20px rgba(0,0,0,.45)) drop-shadow(0 2px 4px rgba(0,0,0,.3));
+  animation:fadeUpIn 600ms cubic-bezier(.22,1,.36,1) both;
 }
 .site-header h1{
   font-family:'Fraunces',serif;
@@ -124,7 +125,8 @@ body.city-amsterdam .site-header::after{
   font-style:italic;
   font-weight:700;
   color:var(--c-secondary);
-  /* Optical character — slightly different weight */
+  display:inline-block;
+  animation:fadeUpSkew 600ms 300ms cubic-bezier(.22,1,.36,1) both;
 }
 
 .site-header .tagline{
@@ -135,6 +137,7 @@ body.city-amsterdam .site-header::after{
   letter-spacing:.18em;
   text-transform:uppercase;
   position:relative;z-index:1;
+  animation:fadeIn 400ms 500ms both;
 }
 
 /* ─── CITY TABS ─────────────────────────────────────────── */
@@ -177,6 +180,9 @@ body.city-amsterdam .site-header::after{
   margin-left:6px;
   transition:background .2s,color .2s;
 }
+.city-tab:nth-child(1){animation:fadeUpIn 400ms 600ms cubic-bezier(.22,1,.36,1) both}
+.city-tab:nth-child(2){animation:fadeUpIn 400ms 680ms cubic-bezier(.22,1,.36,1) both}
+.city-tab:nth-child(3){animation:fadeUpIn 400ms 760ms cubic-bezier(.22,1,.36,1) both}
 .city-tab.active .tab-count{
   background:var(--c-primary);
   color:#fff;
@@ -424,7 +430,12 @@ body.city-amsterdam .site-header::after{
 .section-jump:hover{border-color:var(--c-primary);color:var(--c-primary)}
 
 /* ─── MAIN ───────────────────────────────────────────────── */
-main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
+main{
+  max-width:1300px;margin:0 auto;padding:0 24px 100px;
+  transition:transform 300ms ease,filter 300ms ease;
+  transform-origin:top center;
+}
+body.surprise-open main{transform:scale(0.98);filter:brightness(.94)}
 .section{margin-top:48px}
 .section.hidden{display:none}
 
@@ -477,9 +488,6 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   overflow:hidden;
   position:relative;
   contain:content;
-  /* Staggered entry */
-  opacity:0;
-  animation:cardIn .45s cubic-bezier(.22,1,.36,1) forwards;
   transition:box-shadow .25s ease,transform .25s ease,border-color .2s;
 }
 .card:hover{
@@ -488,9 +496,16 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   border-color:rgba(191,78,26,.28);
 }
 
-@keyframes cardIn{
-  from{opacity:0;transform:translateY(18px) scale(.99)}
-  to{opacity:1;transform:translateY(0) scale(1)}
+/* IO reveal — cards start hidden, JS transitions them in */
+.card--hidden{
+  opacity:0;
+  transform:translateY(24px);
+}
+.card--exiting{
+  opacity:.15!important;
+  transform:scale(.95)!important;
+  transition:opacity 180ms ease!important,transform 180ms ease!important;
+  pointer-events:none;
 }
 
 /* Top accent strip */
@@ -498,7 +513,9 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   height:3px;
   background:linear-gradient(90deg,var(--c-primary) 0%,var(--c-secondary) 100%);
   flex-shrink:0;
+  transition:height 200ms ease;
 }
+.card:hover .card-accent{height:4px}
 
 .card-body{
   padding:18px 20px 20px;
@@ -527,7 +544,9 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   margin-bottom:4px;
   letter-spacing:-.01em;
   overflow-wrap:break-word;
+  transition:color 200ms ease;
 }
+.card:hover .card-name{color:var(--c-primary)}
 
 .card-address{
   font-size:.76rem;color:var(--muted);
@@ -622,10 +641,11 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   background:var(--c-primary);
   color:#fff;
   border-color:var(--c-primary);
-  transform:translateX(2px);
   box-shadow:0 4px 14px rgba(191,78,26,.3);
+  animation:mapsBtnPulse 360ms cubic-bezier(.22,1,.36,1) forwards;
 }
-.maps-btn svg{width:13px;height:13px;fill:currentColor;flex-shrink:0}
+.maps-btn svg{width:13px;height:13px;fill:currentColor;flex-shrink:0;display:block}
+.maps-btn:hover svg{animation:pinBounce 500ms ease forwards}
 
 /* ─── EMPTY ──────────────────────────────────────────────── */
 .empty{
@@ -751,12 +771,19 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   position:fixed;bottom:28px;right:28px;
   width:44px;height:44px;border-radius:50%;
   background:var(--c-dark);color:#fff;border:none;
-  cursor:pointer;display:none;align-items:center;justify-content:center;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
   box-shadow:0 4px 16px rgba(0,0,0,.2);
-  transition:opacity .2s,transform .2s;
+  /* hide state — spring-in transition applied when .show arrives */
+  opacity:0;transform:scale(0) translateY(20px);
+  pointer-events:none;
+  transition:transform 200ms ease,opacity 200ms ease;
   z-index:200;
 }
-.scrolltop.show{display:flex}
+.scrolltop.show{
+  opacity:1;transform:scale(1) translateY(0);
+  pointer-events:auto;
+  transition:transform 350ms cubic-bezier(.34,1.56,.64,1),opacity 250ms ease;
+}
 .scrolltop:hover{opacity:.85;transform:translateY(-2px)}
 
 /* ─── NAPKIN FOOTER ─────────────────────────────────────── */
@@ -806,6 +833,66 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
   font-size:.78rem;color:#8a7060;
 }
 
+/* ─── ANIMATIONS & KEYFRAMES ────────────────────────────── */
+
+/* Header entrance */
+@keyframes fadeUpIn{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes fadeUpSkew{
+  from{opacity:0;transform:translateY(28px) skewX(-2deg)}
+  to{opacity:1;transform:translateY(0) skewX(0deg)}
+}
+.hero-word{display:inline-block;animation:fadeUpIn 600ms 150ms cubic-bezier(.22,1,.36,1) both}
+
+/* City switch transition */
+@keyframes heroExit{
+  from{opacity:1;transform:translateY(0)}
+  to{opacity:0;transform:translateY(-8px)}
+}
+@keyframes heroEnter{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.city-hero.hero-exit{animation:heroExit 180ms ease forwards}
+.city-hero.hero-enter{animation:heroEnter 250ms cubic-bezier(.22,1,.36,1) both}
+
+/* Maps btn pulse + pin bounce */
+@keyframes mapsBtnPulse{
+  0%  {transform:translateX(0) scale(1)}
+  40% {transform:translateX(2px) scale(1.03)}
+  100%{transform:translateX(2px) scale(1)}
+}
+@keyframes pinBounce{
+  0%  {transform:translateY(0)}
+  30% {transform:translateY(-4px)}
+  60% {transform:translateY(-2px)}
+  80% {transform:translateY(-3px)}
+  100%{transform:translateY(0)}
+}
+
+/* Chip activation pop */
+@keyframes chipPop{
+  0%  {transform:scale(1)}
+  50% {transform:scale(1.1)}
+  100%{transform:scale(1)}
+}
+.chip--popping{animation:chipPop 200ms ease}
+
+/* Dice shake */
+@keyframes diceshake{
+  0%,100%{transform:translateX(0)}
+  20%    {transform:translateX(-4px)}
+  40%    {transform:translateX(4px)}
+  60%    {transform:translateX(-4px)}
+  80%    {transform:translateX(4px)}
+}
+
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media(max-width:768px){
   .site-header{padding:48px 20px 0}
@@ -835,10 +922,16 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
 }
 
 @media(prefers-reduced-motion:reduce){
-  .card{animation:none;opacity:1}
+  /* Reveal cards immediately — skip IO transitions */
+  .card--hidden{opacity:1;transform:none}
+  /* Skip all CSS animations */
+  .logo-svg,.hero-word,.site-header h1 em,.site-header .tagline,
+  .city-tab:nth-child(1),.city-tab:nth-child(2),.city-tab:nth-child(3),
+  .city-hero.hero-exit,.city-hero.hero-enter{animation:none;opacity:1;transform:none}
   .site-header::after{animation:none;opacity:.18}
   .surprise-dice{animation:none}
   .dot{animation:none;opacity:.5}
+  .maps-btn:hover,.maps-btn:hover svg,.chip--popping{animation:none}
   *,*::before,*::after{transition-duration:.01ms !important}
 }
 </style>
@@ -865,7 +958,7 @@ main{max-width:1300px;margin:0 auto;padding:0 24px 100px}
       <ellipse cx="38" cy="27" rx="4.5" ry="2.8" fill="#9E5A0A" opacity="0.32" transform="rotate(22 38 27)"/>
       <ellipse cx="34" cy="39" rx="4" ry="2.4" fill="#9E5A0A" opacity="0.3" transform="rotate(-6 34 39)"/>
     </svg>
-    <h1>Tengo <em>Hambre</em></h1>
+    <h1><span class="hero-word">Tengo</span> <em>Hambre</em></h1>
   </div>
   <p class="tagline">A dónde ir cuando tienes hambre</p>
 
@@ -1046,6 +1139,10 @@ let searchQuery = '';
 let currentCuisine = 'all';
 let geoMode = false;
 let userLat = null, userLon = null;
+let _prevRenderCount = 0;
+let _cardObserver = null;
+let _typewriterTimer = null;
+let _filterAnimTimeout = null;
 let PLATOS = {"Madre|Amsterdam":["Cacio e Pepe","Carbonara","Carciofi alla Romana","Tiramisu"],"Portugalia Tasca|Amsterdam":["Bacalhau à Brás","Pastéis de Nata","Arroz de Marisco","Caldo Verde"],"L'Entrecôte et les Dames|Amsterdam":["Entrecôte","Salade Maison","Pommes Frites","Sauce Béarnaise"],"Stek|Amsterdam":["Entrecôte","Côte de Boeuf","Filet Mignon","Rib Eye"],"Knijn Bowling & Restaurant|Amsterdam":["Bitterballen","Kroket","Paling Gerookt","Kaas Soufflé"],"Esh Pitabar|Amsterdam":["Pita Kebab","Falafel","Hummus","Shawarma"],"New York Pizza|Amsterdam":["Margherita Pizza","Pepperoni Pizza","New York Style Pizza","Quattro Formaggi"],"Malevo|Barcelona":["Carne a la parrilla","Asado de tira","Choripán","Empanadas"],"Tino - esto no es una pizza | Barcelona|Barcelona":["Focaccia con Tomate y Aceite","Pizza Romana","Supplí al Ragù","Tiramisu"],"Can Pollastre|Barcelona":["Pollo a la Brasa","Patatas Bravas","Escalivada","Crema Catalana"],"Bar Torpedo|Barcelona":["Croquetas de Jamón","Pulpo a la Gallega","Jamón Ibérico","Tabla de Quesos"],"Cervecería Vaso de Oro|Barcelona":["Jamón Ibérico","Croquetas de Jamón","Boquerones en Vinagre","Tabla de Quesos"],"Kawamura|Barcelona":["Sushi de Atún Rojo","Nigiri Variado","Rollos de Tempura","Sashimi Mixto"],"Auto Rosellon|Barcelona":["Escalivada","Pan con tomate","Croquetas de jamón","Secreto ibérico"],"Hideout Burger|Barcelona":["Hideout Burger","Crispy Bacon Burger","Truffle Fries","Hideout Special"],"Can Recasens|Barcelona":["Fideuà","Arroz a la Cazuela","Suquet de Peix","Calcots a la Brasa"],"Mustà Shawarma|Barcelona":["Shawarma de Pollo","Shawarma de Ternera","Falafel","Hummus"],"Makamaka Beach Burger Café|Barcelona":["Makamaka Burger","Fresh Fish Burger","Surf Burger","Sweet Potato Fries"],"La Porca Burgers|Barcelona":["La Porca Burger","Bacon Burger","Cheese Burger","Crispy Fries"],"Almalibre Açaí House Barcelona|Barcelona":["Açaí Bowl","Granola Bowl","Tropical Smoothie","Açaí Sorbet"],"Bun Bo Raval|Barcelona":["Bun Bo Hue","Bun Cha","Pho Bo","Banh Mi"],"Collage Cocktail Bar|Barcelona":["Mojito Collage","Daiquiri Clásico","Negroni","Margarita"],"Monsieur Bosc|Barcelona":["Escalivada","Botifarra amb mongetes","Fideuà","Crema Catalana"],"Buenas Migas|Barcelona":["Tostadas de Aguacate","Huevos Rotos","Café con Tostadas","Zumo Natural"],"Parking Pizza SANT JOAN|Barcelona":["Pizza Margherita","Pizza Carbonara","Pizza Quattro Formaggi","Pizza Española"],"GAME Pau Claris|Barcelona":["Hamburguesa de Wagyu","Croquetas de Jamón","Costillas BBQ","Tabla de Quesos y Embutidos"],"Arepamundi|Barcelona":["Arepa de Queso","Arepa de Carne Mechada","Arepa de Pollo Deshilachado","Tequeños"],"McDonald's|Barcelona":["Big Mac","McChicken","Patatas Fritas","McFlurry"],"Chicken Shop y Dirty Burger|Barcelona":["Pollo Frito","Dirty Burger","Patatas Bravas","Sándwich de Pollo"],"Restaurant Gokoku|Barcelona":["Ramen de cerdo","Gyoza","Tonkotsu","Edamame"],"Carrefour|Barcelona":["Pollo Asado","Paella","Croquetas de Jamón","Ensalada Mediterránea"],"Toyo - Restaurant Japonès a Gràcia|Barcelona":["Nigiri de atún rojo","Ramen de tonkotsu","Tempura de verduras","Gyoza al vapor"],"Enrique Tomás|Barcelona":["Jamón Ibérico de Bellota","Jamón Serrano Reserva","Tabla de Embutidos Ibéricos","Croquetas de Jamón"],"Chiringuito Escribà|Barcelona":["Paella de marisco","Arroz a banda","Fideuà","Espetos a la sal"],"Wittmore Hotel, an SLH Hotel|Barcelona":["Escalivada","Bacalao a la Llauna","Calamar a la Romana","Crema Catalana"],"Ukai Eixample|Barcelona":["Teppanyaki de ternera","Gambas al ajillo","Salmón a la parrilla","Arroz con marisco"],"Domino's Pizza|Barcelona":["Pizza Pepperoni","Pizza Margherita","Chicken Wings","Garlic Bread"],"El Nacional Barcelona|Barcelona":["Jamón Ibérico","Bacalao a la Llauna","Croquetas de Jamón","Pulpo a la Gallega"],"Palo Alto|Barcelona":["Arroz a banda","Paella de marisco","Fideuà","Suquet de peix"],"Rosa Negra (Vía Laietana) Bar & Restaurante Mexicano|Barcelona":["Chiles Rellenos","Mole Poblano","Carne Asada","Enchiladas Verdes"],"Tickets bar|Barcelona":["Jamón Ibérico","Croquetas de Jamón","Pulpo a la Gallega","Croquetas de Bacalao"],"Herbolario Navarro - Barcelona Carrer de València 186|Barcelona":["Ensalada de vegetales frescos","Zumo natural detox","Hamburguesa vegana","Smoothie bowl"],"Taktika Berri|Barcelona":["Pintxos de bacalao","Croquetas de jamón","Txuleta de buey","Piquillo relleno de queso"],"Horchatería El Tío Che|Barcelona":["Horchata de chufa","Ensaimada","Fartons","Coca de recapte"],"BELGIOUS|Barcelona":["Mejillones a la Belga","Papas a la Francesa","Croquetas de Queso","Filete a la Parrilla"],"La Vietnamita|Barcelona":["Phở","Bánh Mì","Gỏi Cuốn","Cơm Tấm"],"La Taguara Areperia|Barcelona":["Arepa de Queso","Arepa de Carne Mechada","Arepa de Pollo","Arepa de Atún"],"Baladi|Barcelona":["Hummus","Falafel","Kebab de cordero","Tabulé"],"Van Van VAR x BIEN Kebab|Barcelona":["Kebab de Ternera","Kebab de Pollo","Falafel","Shawarma"],"Petit Bangkok|Barcelona":["Pad Thai","Tom Yum Goong","Curry Rojo","Pollo Satay"],"Syra|Barcelona":["Pulpo a la Gallega","Croquetas de Jamón","Gambas al Ajillo","Tabla de Quesos y Embutidos"],"Yashima / Teppanyaki|Barcelona":["Hibachi Steak","Camarones al Teppanyaki","Pollo Teriyaki","Rollitos de Verdura"],"La Polpa|Barcelona":["Carne a la Sal","Carne Madurada","Secreto Ibérico","Carne de Wagyu"],"Futon Espai (showroom & outlet)|Barcelona":["Sushi de atún rojo","Nigiri variado","Rolls especiales","Sashimi surtido"],"Brunch & Cake|Barcelona":["Avocado Toast","Pancakes","Eggs Benedict","French Toast"],"The Fish & Chips Shop|Barcelona":["Fish and Chips","Calamares a la Romana","Gambas al Ajillo","Tabla de Pescaítos Fritos"],"Gelaaati DI MARCO.|Barcelona":["Gelato di Pistachio","Gelato di Stracciatella","Gelato di Nocciola","Gelato di Cioccolato"],"99 Sushi Bar BCN|Barcelona":["Nigiri de atún rojo","Rollos Philadelphia","Tempura de camarones","Sashimi variado"],"Yatai | Barcelona|Barcelona":["Ramen de cerdo","Gyoza","Donburi de ternera","Edamame"],"Indochine Ly Leap Restaurant|Barcelona":["Pho","Banh Mi","Pad Thai","Goi Cuon"],"Koyuki|Barcelona":["Sushi de atún rojo","Ramen de miso","Gyoza al vapor","Tempura de verduras"],"Nata's Cafe Barcelona|Barcelona":["Nata","Café con leche","Croissant","Tostada con tomate"],"Ca la merce|Barcelona":["Calcots a la brasa","Escalivada","Botifarra amb mongetes","Crema Catalana"],"Giulietta Cafè | Pastelería, Restaurante y Catering|Barcelona":["Croissant de Chocolate","Café con Tarta de Queso","Ensalada Mediterránea","Pasta Fresca"],"Ikibana Born | Restaurante japonés|Barcelona":["Nigiri Sushi","Maki Rolls","Tempura","Ramen"],"Bar Calders|Barcelona":["Calcots a la brasa","Escalivada","Botifarra amb mongetes","Conill amb xocolata"],"Santa Ceviche|Barcelona":["Ceviche Clásico","Ceviche Mixto","Tiradito de Salmón","Causa Limeña"],"Horchatería Sirvent Parlament 56|Barcelona":["Horchata con fartons","Café con leche","Granizado de café","Ensaimada"],"Bar Restaurant Cervantes|Barcelona":["Croquetas de Jamón","Pulpo a la Gallega","Jamón Ibérico","Patatas Bravas"],"Ten's Tapas Restaurant Barcelona|Barcelona":["Jamón Ibérico","Pulpo a la Gallega","Croquetas de Jamón","Patatas Bravas"],"Can Kenji|Barcelona":["Kaiseki","Sushi Omakase","Robata Yaki","Miso Soup"],"Tonkotsu Ramen & Asian Street Food|Barcelona":["Tonkotsu Ramen","Gyoza","Takoyaki","Pad Thai"],"Maido|Barcelona":["Nikkei Ceviche","Tiradito de Atún","Gyozas de Camarones","Arroz con Mariscos"],"Mayura Restaurante Indio|Barcelona":["Tandoori Chicken","Butter Chicken","Lamb Vindaloo","Naan Bread"],"Restaurante japonés Mikasa|Barcelona":["Nigiri Surtido","Maki Especial Mikasa","Ramen Tonkotsu","Gyoza"],"VegetArt Cuina Vegana TAKE AWAY|Barcelona":["Burger Vegana","Pizza Vegana","Pasta a la Boloñesa Vegana","Ensalada de la Casa"],"Bienmesabe|Barcelona":["Coca de recapte","Escalivada","Fideuà","Crema Catalana"],"Teresa Carles|Barcelona":["Escalivada","Albergínia farcida","Espaguetis de verdures","Crema de cacau"],"FEELD ORGANIC|Barcelona":["Ensalada Orgánica de Temporada","Smoothie Bowl de Frutas Frescas","Tabla de Quesos y Embutidos Ecológicos","Zumo Detox Verde"],"O’Sfizio fritto|Utrecht":["Arancini","Pasta alla Norma","Camarones Fritos","Croquetas Sicilianas"],"De Bee's Hive|Utrecht":["Bienenstich","Honigkuchen","Blätterteig mit Honig","Bienenstock Torte"],"Chillz|Utrecht":["Pulled Pork Burger","Crispy Chicken Sandwich","BBQ Ribs","Loaded Fries"],"The Streetfood Club Utrecht|Utrecht":["Bao Buns","Pad Thai","Spring Rolls","Satay Skewers"],"Restaurant San Siro|Utrecht":["Ossobuco","Risotto alla Milanese","Cotoletta alla Milanese","Panna Cotta"],"Trattoria Polpette|Utrecht":["Polpette al Ragù","Tagliatelle alla Bolognese","Risotto ai Funghi","Tiramisu"],"Casa Ferreira - TO GO|Utrecht":["Pastéis de Nata","Francesinha","Arroz de Marisco","Bacalhau à Brás"],"Farina - Italian Comfort Food|Utrecht":["Pasta Carbonara","Risotto ai Funghi","Osso Buco","Tiramisu"],"Ombretta Utrecht|Utrecht":["Pasta Carbonara","Risotto ai Funghi","Osso Buco","Tiramisu"],"Trattoria da Roberto Utrecht 🇮🇹|Utrecht":["Pasta Carbonara","Risotto ai Funghi","Osso Buco","Tiramisu"],"Takumi Ramen Utrecht Vredenburg|Utrecht":["Tonkotsu Ramen","Miso Ramen","Gyoza","Karaage"],"Have A Roll Utrecht|Utrecht":["California Roll","Philadelphia Roll","Dragon Roll","Spicy Tuna Roll"],"Soep-er Utrecht|Utrecht":["Soep van de dag","Tomatensoep","Champignonsoep","Uiensoep"],"SHOKUDO Japanese Food & Design|Utrecht":["Ramen","Donburi","Gyoza","Tempura"],"Wandee Thaise Massage Utrecht 💆|Utrecht":["Pad Thai","Som Tam","Massaman Curry","Green Curry"],"Juuls Hummus|Utrecht":["Hummus de garbanzos","Falafel casero","Pan pita tostado","Ensalada de tahina"],"Restaurant Sevilla|Utrecht":["Espetos","Gambas al Ajillo","Rabo de Toro","Torrijas"],"Cibari 🇲🇽|Utrecht":["Tacos al Pastor","Chiles Rellenos","Enchiladas Verdes","Ceviche"],"Coffee Leute Brauhaus|Utrecht":["Currywurst","Schnitzel","Bockwurst","Pretzel mit Käse"],"Karibu - breakfast, coffee, brunch, drinks and events|Utrecht":["Avocado Toast","Benedictine Eggs","Pancakes","Flat White"],"deKleineBaron Catering&Coffee|Utrecht":["Koffie","Broodjes","Croissants","Gebak"],"Boonzaaijer Bakery and Confectionery|Utrecht":["Stroopwafels","Appelflappen","Uitsmijters","Hollandse Nieuwe Haring"],"Vlaamsch Broodhuys Twijnstraat Utrecht|Utrecht":["Brood de masa madre","Croissants de mantequilla","Pan de centeno","Tarta de manzana holandesa"],"McDonald's|Utrecht":["Big Mac","Quarter Pounder","McChicken","Papas Fritas"],"Brandstof Lunchroom & Bedrijfscatering|Utrecht":["Broodje Kroket","Pastrami Sandwich","Bami Goreng","Nasi Kuning"],"Castillo de Haar|Utrecht":["Kasteel Biefstuk","Hollandse Poffertjes","Eendenbout","Kasteelschotel"],"Bunk Restaurant Utrecht|Utrecht":["Bunkburger","Pulled Pork Sandwich","Brisket Sandwich","Mac and Cheese"],"SONMAT 손맛 Korean Soul Food|Utrecht":["Bibimbap","Bulgogi","Kimchi Jjigae","Tteokbokki"],"STAN Utrecht|Utrecht":["Bitterballen","Kroket","Paling gerookt","Uitsmijter"],"Papi’s Comfort Kitchen|Utrecht":["Cubano!","Chicken and Waffles","Breakfast Banger Burrito","Oreo Deluxe Churros","Huevos Rancheros","Mac and Cheese"]};
 let platosReady = true;
 
@@ -1082,32 +1179,50 @@ document.addEventListener('DOMContentLoaded', () => {
   mergeCustomIntoRestaurants();
   buildStats();
   updateTabCounts();
+  initCardObserver();
   render();
   setupScroll();
 });
 
 /* ─── CITY SWITCH ────────────────────────────────────────── */
 function switchCity(city) {
-  currentCity = city;
-  searchQuery = '';
-  currentCuisine = 'all';
-  _chipsBuiltForCity = null;
-  document.getElementById('search').value = '';
+  const curHero = document.querySelector('.city-hero.active');
+  const grid = document.getElementById('grid-all');
 
-  // Body class
-  document.body.className = CITY_CONFIG[city].cssClass;
+  // Fade out current hero + grid
+  if (curHero) curHero.classList.add('hero-exit');
+  if (grid) { grid.style.transition = 'opacity 150ms ease'; grid.style.opacity = '0'; }
 
-  // Tab active state
-  document.querySelectorAll('.city-tab').forEach(t => {
-    t.classList.toggle('active', t.dataset.city === city);
-  });
+  setTimeout(() => {
+    currentCity = city;
+    searchQuery = '';
+    currentCuisine = 'all';
+    _chipsBuiltForCity = null;
+    _prevRenderCount = 0;
+    document.getElementById('search').value = '';
 
-  // Hero panels
-  Object.keys(CITY_CONFIG).forEach(c => {
-    document.getElementById(CITY_CONFIG[c].heroId).classList.toggle('active', c === city);
-  });
+    document.body.className = CITY_CONFIG[city].cssClass;
 
-  render();
+    document.querySelectorAll('.city-tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.city === city);
+    });
+
+    Object.keys(CITY_CONFIG).forEach(c => {
+      const hero = document.getElementById(CITY_CONFIG[c].heroId);
+      hero.classList.remove('hero-exit', 'hero-enter');
+      hero.classList.toggle('active', c === city);
+    });
+
+    // New hero entrance
+    const newHero = document.getElementById(CITY_CONFIG[city].heroId);
+    newHero.classList.add('hero-enter');
+    setTimeout(() => newHero.classList.remove('hero-enter'), 260);
+
+    // Restore grid
+    if (grid) { grid.style.transition = ''; grid.style.opacity = ''; }
+
+    render();
+  }, 180);
 }
 
 /* ─── STATS ─────────────────────────────────────────────── */
@@ -1117,9 +1232,14 @@ function buildStats() {
     const hoods = new Set(rs.map(r => r.h)).size;
     const el = document.getElementById(CITY_CONFIG[city].statsId);
     el.innerHTML = `
-      <div class="city-stat"><div class="city-stat-num">${rs.length}</div><div class="city-stat-label">Sitios</div></div>
-      ${hoods > 1 ? `<div class="city-stat"><div class="city-stat-num">${hoods}</div><div class="city-stat-label">Barrios</div></div>` : ''}
+      <div class="city-stat"><div class="city-stat-num" data-target="${rs.length}">0</div><div class="city-stat-label">Sitios</div></div>
+      ${hoods > 1 ? `<div class="city-stat"><div class="city-stat-num" data-target="${hoods}">0</div><div class="city-stat-label">Barrios</div></div>` : ''}
     `;
+    setTimeout(() => {
+      el.querySelectorAll('.city-stat-num').forEach(numEl => {
+        animateCounter(numEl, 0, parseInt(numEl.dataset.target, 10), 800);
+      });
+    }, 700);
   });
 }
 
@@ -1155,17 +1275,15 @@ function getFiltered() {
 
 function render() {
   const filtered = getFiltered();
+  const newCount = filtered.length;
 
-  // Counts
-  document.getElementById('count-all').textContent = `${filtered.length} sitios`;
-  document.getElementById('result-count').textContent = `${filtered.length} resultados`;
+  // Animated counters
+  animateCounter(document.getElementById('count-all'), _prevRenderCount, newCount, 400, ' sitios');
+  animateCounter(document.getElementById('result-count'), _prevRenderCount, newCount, 400, ' resultados');
+  _prevRenderCount = newCount;
 
-  // Cuisine chips
   buildCuisineChips();
-
-  // Grid
   renderGrid('grid-all', filtered);
-
 }
 
 function renderGrid(gridId, list) {
@@ -1178,10 +1296,11 @@ function renderGrid(gridId, list) {
     return;
   }
   grid.innerHTML = list.map((r, i) => cardHTML(r, i)).join('');
+  observeCards();
 }
 
 function cardHTML(r, i) {
-  const delay = Math.min(i * 0.03, 0.45).toFixed(3);
+  void i; // IO handles stagger, no delay needed
   const hoodHTML = r.h && r.h !== r.c
     ? `<span class="card-hood">${r.h}</span>`
     : '';
@@ -1211,7 +1330,7 @@ function cardHTML(r, i) {
     }
   }
 
-  return `<div class="card" style="animation-delay:${delay}s">
+  return `<div class="card card--hidden">
     <div class="card-accent"></div>
     <div class="card-body">
       ${hoodHTML ? `<div class="card-top">${hoodHTML}</div>` : ''}
@@ -1300,14 +1419,30 @@ function buildCuisineChips() {
     // Just toggle active class — no DOM rebuild
     container.querySelectorAll('.chip').forEach(btn => {
       const cat = btn.dataset.cat || 'all';
-      btn.classList.toggle('active', cat === currentCuisine);
+      const wasActive = btn.classList.contains('active');
+      const isActive = cat === currentCuisine;
+      btn.classList.toggle('active', isActive);
+      if (!wasActive && isActive) {
+        btn.classList.remove('chip--popping');
+        void btn.offsetHeight;
+        btn.classList.add('chip--popping');
+        btn.addEventListener('animationend', () => btn.classList.remove('chip--popping'), { once: true });
+      }
     });
   }
 }
 
 function setCuisine(cat) {
   currentCuisine = cat;
-  render();
+  _animateFilterAndRender();
+}
+
+function _animateFilterAndRender() {
+  const cards = document.querySelectorAll('#grid-all .card');
+  if (!cards.length) { render(); return; }
+  cards.forEach(c => c.classList.add('card--exiting'));
+  clearTimeout(_filterAnimTimeout);
+  _filterAnimTimeout = setTimeout(() => render(), 180);
 }
 
 /* ─── SORPRÉNDEME ────────────────────────────────────────── */
@@ -1330,27 +1465,36 @@ function openSurprise() {
       </div>`
     : '';
 
+  // Name placeholder for typewriter; rest is immediate
   document.getElementById('surprise-body').innerHTML = `
-    <div class="surprise-rname">${escHtml(r.n)}</div>
+    <div class="surprise-rname"></div>
     <div class="surprise-addr">${escHtml(addressClean)}</div>
     ${dishesHTML}
   `;
+
+  // Typewriter on restaurant name
+  const nameEl = document.querySelector('#surprise-body .surprise-rname');
+  _typewriterRun(nameEl, r.n, 30, 800);
 
   const mapsBtn = document.getElementById('surprise-maps-btn');
   if (r.u) { mapsBtn.href = r.u; mapsBtn.style.display = ''; }
   else { mapsBtn.style.display = 'none'; }
 
-  // Re-trigger dice spin
+  // Shake + spin dice (shake 300ms, then spin starts at 300ms)
   const dice = document.getElementById('surprise-dice');
   dice.style.animation = 'none';
-  dice.offsetHeight;
-  dice.style.animation = '';
+  void dice.offsetHeight;
+  dice.style.animation = 'diceshake 300ms ease, spinDice 500ms 300ms cubic-bezier(.22,1,.36,1) both';
 
+  // Dim background
+  document.body.classList.add('surprise-open');
   document.getElementById('surprise-overlay').classList.add('open');
 }
 
 function closeSurprise() {
   document.getElementById('surprise-overlay').classList.remove('open');
+  document.body.classList.remove('surprise-open');
+  clearInterval(_typewriterTimer);
 }
 
 function closeSurpriseOutside(e) {
@@ -1427,6 +1571,64 @@ function _geoFeedback(btn, msg) {
     btn.textContent = '📍 Cerca de mí';
     btn.classList.remove('geo-error');
   }, 3000);
+}
+
+/* ─── ANIMATION UTILITIES ────────────────────────────────── */
+
+function animateCounter(el, from, to, duration, suffix) {
+  suffix = suffix || '';
+  const start = performance.now();
+  const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+  let rafId;
+  function tick(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    el.textContent = Math.round(from + (to - from) * easeOutCubic(progress)) + suffix;
+    if (progress < 1) rafId = requestAnimationFrame(tick);
+  }
+  cancelAnimationFrame(rafId);
+  requestAnimationFrame(tick);
+}
+
+function _typewriterRun(el, text, msPerChar, maxDuration) {
+  clearInterval(_typewriterTimer);
+  const charTime = Math.min(maxDuration / text.length, msPerChar);
+  el.textContent = '';
+  let i = 0;
+  _typewriterTimer = setInterval(() => {
+    if (i < text.length) { el.textContent += text[i++]; }
+    else clearInterval(_typewriterTimer);
+  }, charTime);
+}
+
+/* ─── SCROLL REVEAL (IntersectionObserver) ───────────────── */
+
+function initCardObserver() {
+  _cardObserver = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter(e => e.isIntersecting && e.target.classList.contains('card--hidden'))
+      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+    visible.forEach((entry, idx) => {
+      const card = entry.target;
+      const delay = Math.min(idx * 60, 400);
+      // Temporarily apply a longer reveal transition
+      card.style.transition =
+        `opacity 450ms ${delay}ms cubic-bezier(.22,1,.36,1),` +
+        `transform 450ms ${delay}ms cubic-bezier(.22,1,.36,1)`;
+      card.classList.remove('card--hidden');
+      // After reveal, restore the hover transition
+      card.addEventListener('transitionend', e => {
+        if (e.propertyName === 'opacity') card.style.transition = '';
+      }, { once: true });
+      _cardObserver.unobserve(card);
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+}
+
+function observeCards() {
+  if (!_cardObserver) return;
+  _cardObserver.disconnect();
+  document.querySelectorAll('.card--hidden').forEach(c => _cardObserver.observe(c));
 }
 
 /* ─── SEARCH ─────────────────────────────────────────────── */
