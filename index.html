@@ -223,30 +223,11 @@ body.city-amsterdam .site-header::after{
   margin-top:9px;line-height:1.65;
   max-width:420px;
 }
-.city-stats{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
-.city-stat{
-  text-align:center;
-  background:#fff;
-  border:1px solid var(--card-border);
-  border-radius:0 0 12px 12px;
-  border-top:3px solid var(--c-primary);
-  padding:14px 20px 12px;
-  min-width:76px;
-  box-shadow:0 2px 8px rgba(28,17,8,.05);
-  transition:transform .2s,box-shadow .2s;
-}
-.city-stat:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(28,17,8,.09)}
-.city-stat-num{
-  font-family:'Fraunces',serif;
-  font-size:2.1rem;font-weight:700;
-  color:var(--c-primary);line-height:1;
-  letter-spacing:-.02em;
-}
-.city-stat-label{
-  font-size:.66rem;font-weight:600;
-  color:var(--muted);text-transform:uppercase;
-  letter-spacing:.08em;margin-top:4px;
-}
+
+
+
+
+
 
 /* ─── CONTROLS (sticky) ─────────────────────────────────── */
 .controls{
@@ -898,9 +879,9 @@ body.surprise-open main{transform:scale(0.98);filter:brightness(.94)}
   .site-header{padding:48px 20px 0}
   .city-hero{padding:20px 20px 16px}
   .city-hero-inner{gap:16px}
-  .city-stats{gap:8px}
-  .city-stat{padding:10px 14px;min-width:68px}
-  .city-stat-num{font-size:1.6rem}
+  
+  
+  
   .controls{padding:8px 16px}
   .controls-inner{flex-wrap:wrap;gap:8px}
   .search-wrap{max-width:100%;min-width:100%;order:-1}
@@ -988,7 +969,6 @@ body.surprise-open main{transform:scale(0.98);filter:brightness(.94)}
       <h2><span>Qué comer en</span> — Barcelona</h2>
       <p>La guía personal de comida en Barcelona: imprescindibles de siempre y descubrimientos recientes, con los platos que hay que pedir.</p>
     </div>
-    <div class="city-stats" id="stats-barcelona"></div>
   </div>
 </div>
 
@@ -999,7 +979,6 @@ body.surprise-open main{transform:scale(0.98);filter:brightness(.94)}
       <h2><span>Qué comer en</span> — Utrecht</h2>
       <p>La agenda gastronómica de la vida en Utrecht: cafés al lado del canal, italianos de barrio, entregas rápidas y los mejores rincones para comer bien sin moverte del centro.</p>
     </div>
-    <div class="city-stats" id="stats-utrecht"></div>
   </div>
 </div>
 
@@ -1010,7 +989,6 @@ body.surprise-open main{transform:scale(0.98);filter:brightness(.94)}
       <h2><span>Qué comer en</span> — Amsterdam</h2>
       <p>Un selecto puñado de sitios donde comer bien en Amsterdam, todos recomendados y ninguno decepcionante.</p>
     </div>
-    <div class="city-stats" id="stats-amsterdam"></div>
   </div>
 </div>
 
@@ -1151,7 +1129,6 @@ const CITY_CONFIG = {
   barcelona: {
     cssClass: 'city-barcelona',
     heroId: 'hero-barcelona',
-    statsId: 'stats-barcelona',
     fiveDesc: 'Los sitios que ha visitado y no puede parar de recomendar',
     fourDesc: 'Muy sólidos, para cuando quieres una apuesta segura',
     savedDesc: 'Pendientes de visitar — los tiene en el radar',
@@ -1159,7 +1136,6 @@ const CITY_CONFIG = {
   utrecht: {
     cssClass: 'city-utrecht',
     heroId: 'hero-utrecht',
-    statsId: 'stats-utrecht',
     fiveDesc: 'Los sitios de cabecera de la vida en Utrecht',
     fourDesc: 'Muy buena relación calidad-ambiente',
     savedDesc: 'En la lista de pendientes de Utrecht',
@@ -1167,7 +1143,6 @@ const CITY_CONFIG = {
   amsterdam: {
     cssClass: 'city-amsterdam',
     heroId: 'hero-amsterdam',
-    statsId: 'stats-amsterdam',
     fiveDesc: 'Todos recomendados — lo mejor de Amsterdam',
     fourDesc: 'Muy recomendables',
     savedDesc: 'Pendientes de visitar en Amsterdam',
@@ -1177,7 +1152,6 @@ const CITY_CONFIG = {
 /* ─── INIT ──────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   mergeCustomIntoRestaurants();
-  buildStats();
   updateTabCounts();
   initCardObserver();
   render();
@@ -1223,24 +1197,6 @@ function switchCity(city) {
 
     render();
   }, 180);
-}
-
-/* ─── STATS ─────────────────────────────────────────────── */
-function buildStats() {
-  ['barcelona', 'utrecht', 'amsterdam'].forEach(city => {
-    const rs = RESTAURANTS.filter(r => r.c === CITY_KEY[city]);
-    const hoods = new Set(rs.map(r => r.h)).size;
-    const el = document.getElementById(CITY_CONFIG[city].statsId);
-    el.innerHTML = `
-      <div class="city-stat"><div class="city-stat-num" data-target="${rs.length}">0</div><div class="city-stat-label">Sitios</div></div>
-      ${hoods > 1 ? `<div class="city-stat"><div class="city-stat-num" data-target="${hoods}">0</div><div class="city-stat-label">Barrios</div></div>` : ''}
-    `;
-    setTimeout(() => {
-      el.querySelectorAll('.city-stat-num').forEach(numEl => {
-        animateCounter(numEl, 0, parseInt(numEl.dataset.target, 10), 800);
-      });
-    }, 700);
-  });
 }
 
 function updateTabCounts() {
