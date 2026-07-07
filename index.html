@@ -154,14 +154,16 @@ function loadPlaces() {
   if (placesReady) return placesReady;
   placesReady = new Promise((resolve, reject) => {
     if (!hasKey()) { reject(new Error("no-key")); return; }
-    ((g) => { let p; const d = document;
-      g.importLibrary || (g.importLibrary = (...a) => (p || (p = new Promise((res, rej) => {
-        const e = d.createElement("script");
-        e.src = `https://maps.googleapis.com/maps/api/js?key=${g.key}&loading=async&libraries=places&callback=__gmaps`;
-        e.onerror = () => rej(new Error("script")); window.__gmaps = res; d.head.appendChild(e);
-      }))).then(() => g.importLibrary(...a)));
-    })({ key: GOOGLE_MAPS_API_KEY });
-    google.maps.importLibrary("places").then((lib) => resolve(lib.Place)).catch(reject);
+    const useLib = () => window.google.maps.importLibrary("places")
+      .then((lib) => resolve(lib.Place))
+      .catch((e) => { console.warn("Places importLibrary falló:", e); reject(e); });
+    if (window.google && window.google.maps && window.google.maps.importLibrary) { useLib(); return; }
+    window.__gmapsInit = useLib;
+    const s = document.createElement("script");
+    s.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&v=weekly&libraries=places&loading=async&callback=__gmapsInit`;
+    s.async = true;
+    s.onerror = () => { console.warn("No se pudo cargar Maps JS (¿API/JS activada? ¿referrer?)"); reject(new Error("script")); };
+    document.head.appendChild(s);
   });
   return placesReady;
 }
