@@ -1,115 +1,84 @@
-# Tengo Hambre
+# 🌶️ Tengo Hambre — ruleta de restaurantes
 
-**A dónde ir cuando tienes hambre** — guía personal de restaurantes extraída de Google Maps, con platos recomendados generados por IA.
+**¿No sabes dónde comer?** Pulsa el botón, comparte tu ubicación y te manda al
+restaurante de mi lista personal **más cercano que esté abierto ahora**, con su
+ficha, las fotos de Google Maps y qué pedir.
 
-## Qué es
+**URL pública:** https://zaswear.github.io/tengohambre/
 
-Web estática de un solo archivo (`index.html`) que muestra los restaurantes recomendados por Zaswear en Barcelona, Utrecht y Amsterdam. Los datos vienen del Google Takeout personal y los platos recomendados los genera Claude Haiku y se guardan en `platos.json`.
+---
 
-## Stack
+## Cómo funciona
 
-- HTML5 + CSS + vanilla JS — sin frameworks
-- Claude Haiku (`claude-haiku-4-5-20251001`) — para generar platos por restaurante
-- Python 3 — script de generación por batch (`generar_platos.py`)
-- Google Fonts (Playfair Display + Plus Jakarta Sans)
+1. El usuario pulsa **Tengo hambre** y acepta el permiso de **geolocalización**.
+2. Se ordenan los restaurantes de la lista por distancia (haversine) usando las
+   coordenadas de `restaurants.json`.
+3. Entre los más cercanos se saca **uno aleatorio** (ruleta). Se consulta Google
+   Places para saber si está **abierto ahora**; si está cerrado, prueba con otro.
+4. Se muestra su **ficha**: fotos de Google Maps, distancia, barrio, estado
+   abierto/cerrado, "qué pedir" (`platos.json`) y enlace directo a Google Maps.
+
+Todo es HTML/JS vanilla en un único `index.html`. Sin build step.
+
+---
 
 ## Archivos
 
 ```
 tengohambre/
-├── index.html          ← Toda la web en un solo archivo
-├── platos.json         ← Platos recomendados por restaurante (generados por IA)
-├── generar_platos.py   ← Script para generar/actualizar platos.json
-├── .env                ← API key de Anthropic (NO se sube a git)
-└── .gitignore          ← Excluye .env
+├── index.html          ← Toda la web (ruleta) en un solo archivo
+├── restaurants.json    ← Lista de restaurantes con coordenadas (n,a,c,h,r,u,lat,lon)
+├── platos.json         ← "Qué pedir" por restaurante (clave "Nombre|Ciudad")
+├── geocode.js          ← Geocodifica direcciones → lat/lon (Nominatim, sin key)
+├── generar_platos.py   ← Genera/actualiza platos.json con Claude Haiku
+└── .gitignore
 ```
-
-## Datos
-
-312 restaurantes en 3 ciudades:
-- **Barcelona** — 238 sitios
-- **Utrecht** — 53 sitios
-- **Amsterdam** — 9 sitios (aprox.)
-
-Extraídos del Google Takeout (Reseñas.json + Sitios_guardados.json). Solo establecimientos de comida/bebida dentro de la ciudad (filtrando por código postal).
-
-## Generar platos.json
-
-```bash
-# 1. Pon tu API key en .env
-echo "ANTHROPIC_API_KEY=sk-ant-..." > .env
-
-# 2. Lanza el script (reanuda automáticamente si se interrumpe)
-python3 generar_platos.py
-
-# 3. Para probar solo una ciudad
-python3 generar_platos.py --city Barcelona
-```
-
-El script guarda progreso en `platos.json` tras cada restaurante, por lo que si se interrumpe continúa donde lo dejó.
-
-## Funcionalidades
-
-- Tabs por ciudad con tema de color propio
-- Búsqueda de texto en tiempo real
-- Filtro por barrio
-- Sección "Qué pedir" por restaurante (desde `platos.json`)
-- Botón "Mapa Google" — descarga un KML importable en [Google My Maps](https://www.google.com/mymaps)
-- Enlace directo a Google Maps por restaurante
-
-## Añadir un restaurante nuevo
-
-### Opción A — desde la propia web (recomendado)
-
-Abre `index.html` en el navegador y pulsa el botón **+** (abajo a la izquierda). Rellena el formulario:
-
-| Campo | Ejemplo |
-|-------|---------|
-| Nombre | `Bar del Pla` |
-| Dirección | `Carrer de la Montcada 2, Barcelona` |
-| Ciudad | Barcelona / Utrecht / Amsterdam |
-| Barrio | `Gótic` |
-| URL Google Maps | pega la URL del lugar en Google Maps |
-| Qué pedir | `Croquetes, Patates braves, Vermut` (separado por comas) |
-
-El restaurante aparece al instante y se guarda en el navegador (localStorage). Si recargas la página sigue ahí.
-
-> **Limitación:** los restaurantes añadidos desde el formulario solo se guardan en ese navegador. Para hacerlos permanentes, sigue la Opción B.
 
 ---
 
-### Opción B — editar el HTML directamente (permanente)
+## Configuración necesaria (Google Maps Platform)
 
-1. Abre `index.html` en un editor de texto y busca `const RESTAURANTS = [`.
-2. Añade una entrada al principio o al final del array:
+El estado **"abierto ahora"** y las **fotos** vienen de la **Places API (New)**.
+Hace falta una API key propia con billing:
 
-```js
-{"n":"Bar del Pla","a":"Carrer de la Montcada 2, 08003 Barcelona, España","c":"Barcelona","h":"Gótic","r":5,"u":"https://maps.google.com/?cid=...","s":"review"}
-```
+1. En Google Cloud, activa **Places API (New)** y **Maps JavaScript API**.
+2. Crea una **API key** y **restríngela por "HTTP referrer"** a tu dominio
+   (p. ej. `https://zaswear.github.io/*`) — así es seguro que viaje en el cliente.
+3. Pega la clave en `index.html`, en la constante `GOOGLE_MAPS_API_KEY`.
 
-Campos:
+Sin clave la ruleta sigue funcionando por cercanía, pero sin fotos ni horario.
 
-| Clave | Descripción |
-|-------|-------------|
-| `n` | Nombre del restaurante |
-| `a` | Dirección completa (con código postal y país) |
-| `c` | Ciudad: `Barcelona`, `Utrecht` o `Amsterdam` |
-| `h` | Barrio (aparece como chip en la tarjeta) |
-| `r` | Rating original — usar `5` para cualquier nuevo sitio |
-| `u` | URL de Google Maps |
-| `s` | Fuente: `"review"` si lo has visitado, `"saved"` si es pendiente |
+> **Coste:** cada tirada hace hasta `MAX_LOOKUPS` (12) consultas a Places para
+> encontrar uno abierto. Ajusta `MAX_LOOKUPS` / `NEAREST_K` en `index.html`.
 
-3. Guarda el archivo.
-4. Para añadir los platos "Qué pedir" con IA, ejecuta:
+---
+
+## Regenerar coordenadas
+
+Si añades restaurantes sin `lat`/`lon`, ejecútalo (reanuda si se corta):
 
 ```bash
-python3 generar_platos.py --city Barcelona
+node geocode.js
 ```
 
-El script detecta los restaurantes sin platos y los procesa solos. Al terminar actualiza el HTML automáticamente.
+Usa Nominatim (OpenStreetMap, sin API key, máx 1 req/seg). Los que no resuelva
+quedan marcados con `geocode_failed` y no aparecen en la ruleta hasta corregirlos.
+
+---
+
+## Datos
+
+~307 restaurantes en Barcelona, Utrecht, Ámsterdam, Madrid y Rotterdam,
+extraídos del Google Takeout personal. Los platos recomendados los genera
+Claude Haiku (`generar_platos.py`).
 
 ---
 
 ## Despliegue
 
-El archivo `index.html` + `platos.json` son suficientes para cualquier hosting estático (GitHub Pages, Netlify, Vercel, etc.). No hay build step.
+Vive en `apps/sites/tengohambre` del monorepo `zaswear/zaswear-projects` y se
+espeja a `zaswear/tengohambre` (GitHub Pages) vía `.github/workflows/pages-mirror.yml`.
+
+## 🛡️ Licencia
+
+MIT.
