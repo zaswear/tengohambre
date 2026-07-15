@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<!-- Phosphor Icons (fill) — iconos de UI -->
+<link href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" rel="stylesheet" />
 <style>
   :root {
     --accent: #c4501a;
@@ -182,7 +184,7 @@ async function fetchPlace(Place, r) {
 /* ---------- render ---------- */
 function renderStart(msg, isErr) {
   app.innerHTML = `
-    <button class="btn" id="go">🍽️ Tengo hambre</button>
+    <button class="btn" id="go"><i class="ph-fill ph-fork-knife"></i> Tengo hambre</button>
     <div class="status ${isErr ? "err" : ""}">${msg || ""}</div>`;
   document.getElementById("go").onclick = start;
 }
@@ -210,7 +212,7 @@ function renderResult(r, place, photos, openState) {
       <div class="card-body">
         <div class="name">${esc(r.n)}</div>
         <div class="chips">
-          <span class="chip chip--dist">📍 ${fmtDist(r._dist)}</span>
+          <span class="chip chip--dist" style="display:inline-flex;align-items:center;gap:4px"><i class="ph-fill ph-map-pin"></i>${fmtDist(r._dist)}</span>
           ${openChip}
           ${r.h ? `<span class="chip">${esc(r.h)}</span>` : ""}
           <span class="chip">${esc(r.c)}</span>
@@ -222,7 +224,7 @@ function renderResult(r, place, photos, openState) {
         </div>
       </div>
     </div>
-    <button class="btn btn--ghost again" id="again">🎲 Otra</button>`;
+    <button class="btn btn--ghost again" id="again"><i class="ph-fill ph-dice-five"></i> Otra</button>`;
   document.getElementById("again").onclick = spin;
 }
 
