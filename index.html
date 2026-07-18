@@ -185,8 +185,101 @@ async function fetchPlace(Place, r) {
 function renderStart(msg, isErr) {
   app.innerHTML = `
     <button class="btn" id="go"><i class="ph-fill ph-fork-knife"></i> Tengo hambre</button>
+    <button class="btn btn--ghost" id="crave" style="margin-top: 12px;"><i class="ph-fill ph-chat-circle"></i> Tengo un antojo</button>
     <div class="status ${isErr ? "err" : ""}">${msg || ""}</div>`;
   document.getElementById("go").onclick = start;
+  document.getElementById("crave").onclick = startCraving;
+}
+
+function startCraving() {
+  if (!navigator.geolocation) { renderStart("Tu navegador no soporta geolocalización.", true); return; }
+  app.innerHTML = `<div class="status">Pidiendo tu ubicación…</div>`;
+  navigator.geolocation.getCurrentPosition(
+    (pos) => { userLoc = { lat: pos.coords.latitude, lon: pos.coords.longitude }; renderCravingUI(); },
+    (err) => renderStart("No pude obtener tu ubicación. Reintenta.", true),
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+  );
+}
+
+function renderCravingUI() {
+  app.innerHTML = `
+    <div style="width:100%; display:flex; flex-direction:column; gap:12px;">
+      <p style="font-family:var(--serif); font-size:22px; text-align:center;">¿De qué tienes antojo?</p>
+      <input type="text" id="craving-input" placeholder="Ej: algo picante, comida mexicana..." style="padding:14px; border-radius:12px; border:1px solid var(--line); background:var(--card); color:var(--text); font-family:var(--sans); font-size:16px;">
+      <button class="btn" id="ask-ai" style="justify-content:center;">Preguntar a la IA</button>
+      <div id="ai-status" class="status"></div>
+    </div>
+  `;
+  document.getElementById("ask-ai").onclick = async () => {
+    const input = document.getElementById("craving-input").value.trim();
+    if (!input) return;
+    document.getElementById("ask-ai").disabled = true;
+    await processCraving(input);
+  };
+}
+
+async function processCraving(craving) {
+  const statusEl = document.getElementById("ai-status");
+  statusEl.innerText = "Preparando IA local...";
+  
+  try {
+    const { CreateMLCEngine } = await import("https://esm.run/@mlc-ai/web-llm");
+    const initProgressCallback = (report) => {
+      statusEl.innerText = \`Cargando modelo: \${Math.round(report.progress * 100)}% (\${report.text})\`;
+    };
+    
+    // Gemma 2B is an excellent small model for this
+    const engine = await CreateMLCEngine("gemma-2b-it-q4f32_1-MLC", { initProgressCallback });
+    
+    statusEl.innerText = "Pensando...";
+    const pool = nearest().slice(0, 15);
+    const catalog = pool.map(r => \`- \${r.n} (\${r.c}): \${platosDe(r).join(", ") || "sin platos"}\`).join("\\n");
+    
+    const prompt = \`Eres un experto recomendador de restaurantes.
+El usuario tiene este antojo: "\${craving}".
+Aquí tienes una lista de restaurantes cercanos (Nombre (Categoría): platos):
+\${catalog}
+
+Elige EXACTAMENTE UNO que mejor satisfaga el antojo.
+Responde ÚNICAMENTE con el nombre exacto del restaurante, tal y como aparece en la lista.\`;
+
+    const reply = await engine.chat.completions.create({
+      messages: [{ role: "user", content: prompt }],
+      temperature: 0.1, // Baja temperatura para que sea determinista y extraiga bien el nombre
+    });
+    
+    const aiChoice = reply.choices[0].message.content.trim();
+    
+    // Buscar el restaurante elegido en el pool
+    const chosen = pool.find(r => aiChoice.includes(r.n)) || pool[0]; // fallback
+    
+    // Girar la ruleta hasta él (para reutilizar la UI de resultado)
+    spinTo(chosen);
+  } catch(e) {
+    statusEl.innerText = "Error: " + e.message;
+    document.getElementById("ask-ai").disabled = false;
+  }
+}
+
+async function spinTo(targetR) {
+  let Place;
+  try { Place = await loadPlaces(); } catch (e) {}
+  renderSpin(targetR.n);
+  
+  let place = null, open = undefined;
+  if (Place) {
+    try {
+      place = await fetchPlace(Place, targetR);
+      if (place) { try { open = await place.isOpen(); } catch { open = undefined; } }
+    } catch {}
+  }
+  
+  let photos = [];
+  try {
+    if (place && place.photos) photos = place.photos.slice(0, PHOTO_COUNT).map((p) => p.getURI({ maxWidth: 640, maxHeight: 480 }));
+  } catch {}
+  
+  setTimeout(() => renderResult(targetR, place, photos, open === true ? true : undefined), 600);
 }
 
 function renderSpin(name) {
