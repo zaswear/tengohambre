@@ -240,7 +240,7 @@ async function processCraving(craving) {
   try {
     const { CreateMLCEngine } = await import("https://esm.run/@mlc-ai/web-llm");
     const initProgressCallback = (report) => {
-      statusEl.innerText = \`Cargando modelo: \${Math.round(report.progress * 100)}% (\${report.text})\`;
+      statusEl.innerText = `Cargando modelo: ${Math.round(report.progress * 100)}% (${report.text})`;
     };
     
     // Gemma 2B is an excellent small model for this
@@ -248,15 +248,15 @@ async function processCraving(craving) {
     
     statusEl.innerText = "Pensando...";
     const pool = nearest().slice(0, 15);
-    const catalog = pool.map(r => \`- \${r.n} (\${r.c}): \${platosDe(r).join(", ") || "sin platos"}\`).join("\\n");
+    const catalog = pool.map(r => `- ${r.n} (${r.c}): ${platosDe(r).join(", ") || "sin platos"}`).join("\n");
     
-    const prompt = \`Eres un experto recomendador de restaurantes.
-El usuario tiene este antojo: "\${craving}".
+    const prompt = `Eres un experto recomendador de restaurantes.
+El usuario tiene este antojo: "${craving}".
 Aquí tienes una lista de restaurantes cercanos (Nombre (Categoría): platos):
-\${catalog}
+${catalog}
 
 Elige EXACTAMENTE UNO que mejor satisfaga el antojo.
-Responde ÚNICAMENTE con el nombre exacto del restaurante, tal y como aparece en la lista.\`;
+Responde ÚNICAMENTE con el nombre exacto del restaurante, tal y como aparece en la lista.`;
 
     const reply = await engine.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
